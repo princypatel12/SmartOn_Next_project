@@ -22,7 +22,7 @@ export default function Header() {
         </nav>
         {/* CTA */}
         <Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">
-          <button className="bg-orange-600 hover:bg-orange-600 text-white text-sm px-4 py-1 rounded-sm shadow transition mr-7">
+          <button className="bg-[#ED5428] hover:bg-[#ED5428] text-white text-sm px-4 py-1 rounded-sm shadow transition mr-7">
             Book a Demo Now
           </button>
         </Link>

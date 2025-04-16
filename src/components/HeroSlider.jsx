@@ -1,6 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from 'next/link';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Keyboard, EffectFade } from "swiper/modules";
 
@@ -11,8 +15,14 @@ const slides = [
 ];
 
 export default function HeroSlider() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
-    <section className="p-0 bg-gray-900 relative">
+    <section className="pt-16 bg-gray-900 relative">
       <Image
         src="/images/logo/VOSAP_Logo.jpg"
         alt="Top Right Logo"
@@ -40,22 +50,20 @@ export default function HeroSlider() {
             >
               <div className="absolute inset-0"></div>
               <div className="container mx-auto h-full flex items-center justify-center text-center px-4">
-                <div className="text-white max-w-2xl z-10">
-                  <div className="mb-6 space-x-4">
-                    <a
+                <div className="text-white max-w-2xl z-10"data-aos="fade-up">
+                  <div className="mt-20 space-x-4">
+                    <Link
                       href="/about-us"
-                    //   target="_blank"
-                      className="inline-block bg-orange-600 px-6 py-3 rounded-sm text-white shadow-lg transition hover:scale-105"
+                      className="inline-block bg-[#ED5428] px-7 py-3 rounded-sm text-white shadow-lg transition hover:scale-105"
                     >
                       About Us
-                    </a>
-                    <a
-                      href="/contact-us"
-                    //   target="_blank"
+                    </Link>
+                    <Link
+                      href="/contact-us" 
                       className="inline-block border border-white px-6 py-3 rounded-sm text-white shadow-lg transition hover:scale-105"
                     >
                       Contact Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
