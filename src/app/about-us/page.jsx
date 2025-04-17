@@ -1,7 +1,9 @@
-import React from 'react'
+// import React from 'react'
 
-export default function page() {
+export default function AboutPage() {
   return (
-    <div>About page</div>
-  )
+    <main className="pt-16 px-4"> 
+        <h1>About us page</h1>
+    </main>
+  );
 }

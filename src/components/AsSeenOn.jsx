@@ -14,23 +14,20 @@ export default function AsSeenOn() {
               alt="TEDx"
               width={80}
               height={60}
-            //   className="h-auto w-auto"
             />
             <Image
                src="https://nasscom.in/emerge50/images/emerge50-logo.jpg"
                alt="Nasscom"
                width={80}
                height={60}
-            //    className="h-auto w-auto"
             /> 
              <Image
                src="https://media.assettype.com/TNIE/import/2018/12/23/original/NDTV.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true"
                alt="NDTV"
                width={80}
                height={60}
-            //    className="h-auto w-auto"
              />
-             <p className="bg-white text-left pl-2 text-orange-700 text-sm font-extrabold rounded-md min-w-[90px] w-[156px] ">
+             <p className="bg-white text-left pl-2 text-orange-700 text-sm font-extrabold rounded-md min-w-[90px] w-[146px] h-16">
                & 20+ National Media Portals
              </p> 
           </div>

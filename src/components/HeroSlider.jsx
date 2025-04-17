@@ -51,16 +51,16 @@ export default function HeroSlider() {
               <div className="absolute inset-0"></div>
               <div className="container mx-auto h-full flex items-center justify-center text-center px-4">
                 <div className="text-white max-w-2xl z-10"data-aos="fade-up">
-                  <div className="mt-20 space-x-4">
+                <div className="mt-20 space-x-0 space-y-4 sm:space-x-4 sm:space-y-0 flex flex-col sm:flex-row justify-center items-center">
                     <Link
                       href="/about-us"
-                      className="inline-block bg-[#ED5428] px-7 py-3 rounded-sm text-white shadow-lg transition hover:scale-105"
+                      className="btn inline-block bg-[#ED5428] text-[16px] sm:text-[17px] px-6 sm:px-7 py-2.5 sm:py-3 rounded text-white shadow-lg transition hover:scale-105"
                     >
                       About Us
                     </Link>
                     <Link
-                      href="/contact-us" 
-                      className="inline-block border border-white px-6 py-3 rounded-sm text-white shadow-lg transition hover:scale-105"
+                      href="/contact-us"
+                      className="btn inline-block border border-white text-[16px] sm:text-[17px] px-5 sm:px-6 py-2.5 sm:py-3 rounded text-white shadow-lg transition hover:scale-105"
                     >
                       Contact Us
                     </Link>
