@@ -21,6 +21,7 @@ export default function HeroSlider() {
       once: false,
     });
   }, []);
+  
   return (
     <section className="pt-16 bg-gray-900 relative">
       <Image
@@ -71,8 +72,6 @@ export default function HeroSlider() {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* Optional custom navigation or pagination */}
     </section>
   );
 }

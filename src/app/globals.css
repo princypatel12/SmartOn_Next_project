@@ -49,9 +49,23 @@ button .btn {
   box-shadow: rgb(255, 220, 210) 6px 8px 0px;
   border: 1px solid rgb(255, 220, 210);
 }
-
 .image-card-style:hover {
   box-shadow: rgb(251, 122, 83) 6px 8px 0px;
 }
+.btn-gradient-pink-orange {
+  background-image: linear-gradient(to right, #de347f, #ef5f43, #de347f);
+}
+.smarton-typewrite{
+color:rgb(220, 49, 49);
+display:inline-block;
+}
+.smarton-commontext{
+font-size : 45.008px;
+font-weight:700;
+letter-spacing:-2px;
+line-height:50px;
+}
+
+
 
 
