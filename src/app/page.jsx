@@ -21,6 +21,10 @@ export default function HomePage() {
       /> */}
       <CardSection/>
       <SmartOn_TextVideo/>
+      <SmartOn_ReuseText 
+      title="Features"
+      description="Connects with an app that articulates everyday visual information into speech"
+      />
     </div>
   );
 }
