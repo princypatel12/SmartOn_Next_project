@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export default function ImageCards({ imageSrc, title, description }) {
+export default function ImageCards({ imageSrc, title, description,delay = 0}) {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
@@ -14,6 +14,7 @@ export default function ImageCards({ imageSrc, title, description }) {
     <div
       className="relative w-full sm:w-[300px] md:w-[350px] max-w-sm group cursor-pointer image-card-style mx-auto sm:mx-4 mb-8"
       data-aos="fade-up"
+      data-aos-delay={delay}
     >
       {/* Background with hover */}
       <div className="absolute inset-0 z-0 duration-300 ease-in-out" />

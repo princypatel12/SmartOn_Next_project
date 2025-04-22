@@ -20,7 +20,7 @@ const cardData = [
 
 export default function CardSection() {
   return (
-    <section className="py-12 px-6">
+    <section className="pb-6 px-6">
       <div className="flex flex-wrap justify-start">
         {cardData.map((card, index) => (
           <ImageCards
@@ -28,6 +28,7 @@ export default function CardSection() {
             imageSrc={card.imageSrc}
             title={card.title}
             description={card.description}
+            delay={index * 200}
           />
         ))}
       </div>
