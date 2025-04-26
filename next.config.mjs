@@ -14,6 +14,54 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'media.assettype.com',
           },
+          {
+            protocol: 'https',
+            hostname:'www.sunbots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.sunbots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.subots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.sunbots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.sunbots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.sunbots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.sunbots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.sunbots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.sunbots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.sunbots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.sunbots.in'
+          },
+          {
+            protocol:'https',
+            hostname:'www.sunbots.in'
+          }
         ],
       }
 };

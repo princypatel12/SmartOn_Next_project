@@ -5,9 +5,13 @@ import SmartOn_ReuseText from "@/components/SmartOn_ReuseText";
 import CardSection from "@/components/CardSection";
 import SmartOn_TextVideo from "@/components/SmartOn_TextVideo";
 import Features_IconText from "@/components/Features_IconText";
-import HighlightText from "@/components/HighlightText";
+// import HighlightText from "@/components/HighlightText";
 import CombinedComponent from "@/components/CombinedComponent";
 import AwardCard from "@/components/AwardCard";
+import DonorsPartners from "@/components/DonorsPartners";
+import PartnersSlider from "@/components/PartnersSlider";
+import Testimonials from "@/components/Testimonials";
+
 // import DonorsPartners from "@/components/Donors&Partners";
 // import FeedbackSection from "@/components/FeedbackSection";
 
@@ -42,11 +46,16 @@ export default function HomePage() {
       description="Our Achievements"
       />
       <AwardCard/>
-      <HighlightText
+      {/* <HighlightText
       title="Our"
       highlight="Donors & Partners?"
       customstyle="flex justify-start px-12"
-      />
+      /> */}
+      <DonorsPartners/>
+      <PartnersSlider/>
+      <Testimonials/>
+      
+     
     </div>
   );
 }

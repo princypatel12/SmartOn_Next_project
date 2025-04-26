@@ -9,13 +9,13 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl px-6 py-4 flex justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="space-x-2">
           <img
             src="/images/logoTransparentBg.png"
             alt="Smart On Logo"
-            className="w-[100px]"
+            className="w-[90px]"
           />
         </Link>
 
@@ -27,14 +27,14 @@ export default function Header() {
           {isOpen ? <X size={24} className="text-[#ED5428]"/> : <Menu size={24} className="text-[#ED5428]" />}
         </button>
 
-        <nav className="hidden md:flex space-x-8 text-sm items-center">
+        <nav className="hidden md:flex space-x-8 text-[17px] items-center">
           <Link href="/" className="hover:text-gray-300 transition">Home</Link>
           <Link href="/about-us" className="hover:text-gray-300 transition">About Us</Link>
           <Link href="/application" className="hover:text-gray-300 transition">Product</Link>
           <Link href="/event" className="hover:text-gray-300 transition">Partner with Smarton</Link>
           <Link href="/contact-us" className="hover:text-gray-300 transition">Contact Us</Link>
           <Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">
-            <button className="bg-[#ED5428] hover:bg-[#ED5428] text-white text-[17px] px-3 py-2 rounded shadow transition">
+            <button className="bg-[#ED5428] hover:bg-[#ED5428] text-white text-[16px] flex items-center px-3 py-1.5 leading-6 [letter-spacing:0.5px] rounded shadow transition">
               Book a Demo Now
             </button>
           </Link>

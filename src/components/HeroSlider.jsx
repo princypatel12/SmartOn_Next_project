@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import Image from "next/image";
 import Link from 'next/link';
@@ -23,13 +23,13 @@ export default function HeroSlider() {
   }, []);
   
   return (
-    <section className="pt-16 bg-gray-900 relative">
+    <section className="pt-15 relative">
       <Image
         src="/images/logo/VOSAP_Logo.jpg"
-        alt="Top Right Logo"
+        alt="VOSAP Logo"
         width={80}
-        height={140}
-        className="absolute top-13 right-6 z-10 "
+        height={148}
+        className="absolute top-16 right-5 z-10 "
       />
 
       <Swiper
@@ -49,9 +49,9 @@ export default function HeroSlider() {
               className="relative w-full h-screen bg-cover bg-center"
               style={{ backgroundImage: `url(${src})` }}
             >
-              <div className="absolute inset-0"></div>
+              {/* <div className="absolute inset-0"></div> */}
               <div className="container mx-auto h-full flex items-center justify-center text-center px-4">
-                <div className="text-white max-w-2xl z-10"data-aos="fade-up">
+                <div className="text-white max-w-2xl z-10"data-aos="fade-up" data-aos-once="false">
                 <div className="mt-20 space-x-0 space-y-4 sm:space-x-4 sm:space-y-0 flex flex-col sm:flex-row justify-center items-center">
                     <Link
                       href="/about-us"
