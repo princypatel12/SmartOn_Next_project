@@ -8,8 +8,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md">
-      <div className="max-w-7xl px-6 py-4 flex justify-between">
+    <header className="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md px-11">
+      <div className="max-w-7xl py-4 flex justify-between">
         {/* Logo */}
         <Link href="/" className="space-x-2">
           <img

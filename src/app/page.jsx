@@ -11,6 +11,8 @@ import AwardCard from "@/components/AwardCard";
 import DonorsPartners from "@/components/DonorsPartners";
 import PartnersSlider from "@/components/PartnersSlider";
 import Testimonials from "@/components/Testimonials";
+import LatestBlogs from "@/components/LatestBlogs";
+// import Footer from "@/components/Footer";
 
 // import DonorsPartners from "@/components/Donors&Partners";
 // import FeedbackSection from "@/components/FeedbackSection";
@@ -54,6 +56,8 @@ export default function HomePage() {
       <DonorsPartners/>
       <PartnersSlider/>
       <Testimonials/>
+      <LatestBlogs/>
+      {/* <Footer/> */}
       
      
     </div>
