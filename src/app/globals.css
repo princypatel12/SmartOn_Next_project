@@ -147,7 +147,15 @@ line-height:50px;
 /* aboutSection css */
 .bg-gradient-black-green {
   background-color: #1d2130;
-  height: 489px;
+  /* height: 489px; */
+}
+/* imagecontentsection css */
+.fs-45{
+  font-size: 45.008px;
+}
+/* missionvissionsection css  */
+.border-radius{
+  border-radius:50%;
 }
 
 

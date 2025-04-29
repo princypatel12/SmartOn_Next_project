@@ -17,7 +17,7 @@ const blogs = [
   },
 ];
 
-const LatestBlogs = () => {
+export default function LatestBlogs(){
   return (
     <section className="py-16 px-11 bg-white">
       <div className="max-w-3xl mx-auto text-center">
@@ -32,7 +32,7 @@ const LatestBlogs = () => {
               <h3 className="font-semibold fs-18 mt-6 mb-6 leading-snug text-gray-900">
                 {blog.title}
               </h3>
-              <div className="absolute h-3 relative overflow-hidden">
+              <div className="absolute h-3.5 relative overflow-hidden">
                 {/* Date */}
                 <span className="fs-14 text-left absolute inset-0 flex text-white font-semibold text-sm transition-all duration-900 ease-in-out group-hover:-translate-y-full group-hover:opacity-0">
                   {blog.date}
@@ -51,4 +51,4 @@ const LatestBlogs = () => {
   );
 };
 
-export default LatestBlogs;
+
