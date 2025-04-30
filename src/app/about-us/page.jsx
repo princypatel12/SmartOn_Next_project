@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import AboutSection from "@/components/AboutSection";
+import AdvisorsMentors from "@/components/AdvisorsMentors";
 import HighlightText from "@/components/HighlightText";
 import ImageContentSection from "@/components/ImageContentSection";
 import MissionVissionSlider from "@/components/MissionVissionSlider";
@@ -9,7 +10,6 @@ import TeamMemberCards from "@/components/TeamMemberCards";
 export default function AboutPage() {
   return (
     <main className="pt-17"> 
-        {/* <h1>About us page</h1> */}
         <AboutSection
         title="About Us"
         subtitle="We specialize in Assistive Technology"
@@ -35,6 +35,10 @@ export default function AboutPage() {
     <TeamMemberCards
     title="The Smarton"
     highlightText="Family"/>
+    <AdvisorsMentors
+    title="Advisors &"
+    highlightText="Mentors"
+    />
     
        
     </main>

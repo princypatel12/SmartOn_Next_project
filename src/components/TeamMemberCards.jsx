@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FaLinkedin } from 'react-icons/fa';
 import HighlightText from './HighlightText';
+import Link from 'next/link';
 
 const teamMembers = [
   {
@@ -64,7 +65,7 @@ export default function TeamMemberCards({ title, highlightText }) {
             <div className="overflow-hidden shadow-md group bg-white hover:shadow-xl">
               <Image
                 src={member.image}
-                alt={member.name}
+                alt="membername"
                 width={300}
                 height={300}
                 className="w-full h-auto object-cover"
@@ -74,13 +75,13 @@ export default function TeamMemberCards({ title, highlightText }) {
                 <p className="uppercase text-[16px] text-gray-700">{member.role}</p>
                 {member.linkedin && (
                   <div className="mt-2">
-                    <a
+                    <Link
                       href={member.linkedin}
                       target="_blank"
                       className="inline-block text-black-600 hover:text-black-800"
                     >
                       <FaLinkedin size={20} />
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>

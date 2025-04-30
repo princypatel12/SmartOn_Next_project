@@ -2,7 +2,7 @@ import AsSeenOn from "@/components/AsSeenOn";
 import HeroSlider from "@/components/HeroSlider";
 import SmartOn_ReuseText from "@/components/SmartOn_ReuseText";
 // import ImageCards from "@/components/ImageCards";
-import CardSection from "@/components/CardSection";
+import HomeCardSection from "@/components/HomeCardSection";
 import SmartOn_TextVideo from "@/components/SmartOn_TextVideo";
 import Features_IconText from "@/components/Features_IconText";
 // import HighlightText from "@/components/HighlightText";
@@ -31,7 +31,7 @@ export default function HomePage() {
       title="AI-enabled Assistive App"
       description="A smart application that recognizes and interprets visual information while providing real-time auditory feedback to enhance user experience."
       /> */}
-      <CardSection/>
+      <HomeCardSection/>
       <SmartOn_TextVideo/>
       <SmartOn_ReuseText 
       title="Features"

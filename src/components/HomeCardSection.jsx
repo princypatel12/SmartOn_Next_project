@@ -1,6 +1,6 @@
 import ImageCards from './ImageCards';
 
-const cardData = [
+const homeCardData = [
   {
     imageSrc: "/images/ImageCards/app_image.png",
     title: "AI-enabled Assistive App",
@@ -18,20 +18,6 @@ const cardData = [
   },
 ];
 
-export default function CardSection() {
-  return (
-    <section className="pb-6 px-6">
-      <div className="flex flex-wrap justify-start">
-        {cardData.map((card, index) => (
-          <ImageCards
-            key={index}
-            imageSrc={card.imageSrc}
-            title={card.title}
-            description={card.description}
-            delay={index * 200}
-          />
-        ))}
-      </div>
-    </section>
-  );
+export default function HomeCardSection() {
+  return <ImageCards cardsData={homeCardData} />;
 }
