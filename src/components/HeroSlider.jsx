@@ -50,7 +50,7 @@ export default function HeroSlider() {
               style={{ backgroundImage: `url(${src})` }}
             >
               {/* <div className="absolute inset-0"></div> */}
-              <div className="container mx-auto h-full flex items-center justify-center text-center px-4">
+              <div className="container max-w-full mx-auto h-full flex items-center justify-center text-center px-4">
                 <div className="text-white max-w-2xl z-10"data-aos="fade-up" data-aos-once="false">
                 <div className="mt-20 space-x-0 space-y-4 sm:space-x-4 sm:space-y-0 flex flex-col sm:flex-row justify-center items-center">
                     <Link
@@ -61,7 +61,7 @@ export default function HeroSlider() {
                     </Link>
                     <Link
                       href="/contact-us"
-                      className="btn inline-block border border-white text-[16px] sm:text-[17px] px-5 sm:px-6 py-2.5 sm:py-3 rounded text-white shadow-lg transition hover:scale-105"
+                      className="btn inline-block border border-white text-[16px] sm:text-[17px] px-5 sm:px-6 py-2.5 sm:py-3 rounded text-white shadow-lg transition hover:scale-105 hover:bg-[#FFFFFF]"
                     >
                       Contact Us
                     </Link>

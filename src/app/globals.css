@@ -31,6 +31,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Manrope', sans-serif;
+  overflow-x: hidden;
 }
 .JakartaSans-font {
   font-family: var(--alt-font);
@@ -157,5 +158,7 @@ line-height:50px;
 .border-radius{
   border-radius:50%;
 }
-
-
+/* addresssection css  */
+.bg-color{
+  background-color: #f7f7f7;
+}

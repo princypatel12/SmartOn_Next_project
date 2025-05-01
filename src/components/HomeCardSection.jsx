@@ -19,5 +19,7 @@ const homeCardData = [
 ];
 
 export default function HomeCardSection() {
-  return <ImageCards cardsData={homeCardData} />;
+  return(
+  <ImageCards cardsData={homeCardData} />
+  );
 }

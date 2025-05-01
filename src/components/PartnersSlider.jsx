@@ -6,18 +6,18 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 const partners = [
-  'https://www.sunbots.in/images/ngo/7.%20Andha%20kanya%20Parakash.png',
-  'https://www.sunbots.in/images/ngo/8.%20JPM.png',
-  'https://www.sunbots.in/images/ngo/9.%20NAB.jpg',
-  'https://www.sunbots.in/images/ngo/10.%20Navvikash.jpg',
-  'https://www.sunbots.in/images/ngo/11.%20MPWAB.png',
-  'https://www.sunbots.in/images/ngo/13.%20KSH.jpg',
-  'https://www.sunbots.in/images/ngo/1.%20BPA.jpeg',
-  'https://www.sunbots.in/images/ngo/2.%20SighSavers.png',
-  'https://www.sunbots.in/images/ngo/3.%20Raah%20Foundation.jpeg',
-  'https://www.sunbots.in/images/ngo/4.%20Chennai.png',
-  'https://www.sunbots.in/images/ngo/5.%20Navchetann.png',
-  'https://www.sunbots.in/images/ngo/6.%20Rajkot.png',
+  '/images/ngo/7. Andha kanya Parakash.png',
+  '/images/ngo/8. JPM.png',
+  '/images/ngo/9. NAB.jpg',
+  '/images/ngo/10. Navvikash.jpg',
+  '/images/ngo/11. MPWAB.png',
+  '/images/ngo/13. KSH.jpg',
+  '/images/ngo/1. BPA.jpeg',
+  '/images/ngo/2. SighSavers.png',
+  '/images/ngo/3. Raah Foundation.jpeg',
+  '/images/ngo/4. Chennai.png',
+  '/images/ngo/5. Navchetann.png',
+  '/images/ngo/6. Rajkot.png',
 ];
 
 export default function PartnersSlider() {
@@ -38,7 +38,7 @@ export default function PartnersSlider() {
         >
           {partners.map((url, index) => (
             <SwiperSlide key={index} className="flex justify-center items-center py-4">
-              <a href="#" className="block">
+             
                 <Image
                   src={url}
                   alt={`Partner ${index + 1}`}
@@ -46,7 +46,6 @@ export default function PartnersSlider() {
                   height={60}
                   className="h-[60px] object-contain"
                 />
-              </a>
             </SwiperSlide>
           ))}
         </Swiper>

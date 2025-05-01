@@ -10,7 +10,7 @@ export default function SmartOn_ReuseText({ title, description }) {
   }, []);
 
   return (
-    <div className="text-center max-w-4xl mx-auto px-4 py-12" data-aos="fade-up">
+    <div className="text-center max-w-full mx-auto py-12" data-aos="fade-up">
       <span className="font-manrope text-[#ED5428] uppercase text-[17px] tracking-widest block mb-1 font-semibold">
         {title}
       </span>

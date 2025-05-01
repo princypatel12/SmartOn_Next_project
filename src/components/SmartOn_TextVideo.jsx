@@ -46,7 +46,6 @@ export default function SmartOn_TextVideo() {
                 className="w-full aspect-video rounded-2xl shadow-md"
                 src="https://www.youtube.com/embed/clJOAVADrsc?si=SZv1u1FifbkrGK-d"
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
