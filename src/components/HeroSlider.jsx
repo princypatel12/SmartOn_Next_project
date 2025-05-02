@@ -61,7 +61,7 @@ export default function HeroSlider() {
                     </Link>
                     <Link
                       href="/contact-us"
-                      className="btn inline-block border border-white text-[16px] sm:text-[17px] px-5 sm:px-6 py-2.5 sm:py-3 rounded text-white shadow-lg transition hover:scale-105 hover:bg-[#FFFFFF]"
+                      className="btn inline-block border border-white text-[16px] sm:text-[17px] px-5 sm:px-6 py-2.5 sm:py-3 rounded text-white shadow-lg transition hover:scale-105 hover:bg-[#FFFFFF] hover:text-black"
                     >
                       Contact Us
                     </Link>

@@ -1,6 +1,6 @@
-import AwardComponent from './AwardComponent';
+import Image from 'next/image';
 
-const awards = [
+const awardsData = [
   {
     imageSrc: '/images/Award-Img/1. LV Prasad.jpg',
     title: 'Winner at Lv Prasad Startup Challenge 2024',
@@ -33,19 +33,32 @@ const awards = [
     imageSrc:'/images/Award-Img/7. SmartOn_Tata.png',
     title:'Top 50 Startups at the Tata Social Enterprise Challenge'
   }
-
 ];
 
 export default function AwardCard() {
   return (
-    <section className="mb-8 pb-13">
-      <ul className="grid grid-cols-3 gap-5 px-12">
-        {awards.map((award, index) => (
-          <AwardComponent
-            key={index}
-            imageSrc={award.imageSrc}
-            title={award.title}
-          />
+    <section className="mb-8 pb-13 container max-w-3xl mx-auto">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        {awardsData.map((award, index) => (
+          <li key={index} className="text-white">
+            <figure className="relative w-full overflow-hidden shadow-lg">
+              <div className="relative bg-[#252B48]">
+                <Image
+                  src={award.imageSrc}
+                  alt={award.title}
+                  width={400}
+                  height={300}
+                  // className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-black/40" />
+              </div>
+              <figcaption className="absolute inset-0 flex items-end p-4 sm:p-6">
+                <p className="text-white text-lg sm:text-xl fs-22 rubik-font font-semibold leading-snug drop-shadow-md">
+                  {award.title}
+                </p>
+              </figcaption>
+            </figure>
+          </li>
         ))}
       </ul>
     </section>

@@ -76,9 +76,11 @@ const Footer = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M16 12H4m0 0l4-4m-4 4l4 4" />
             </svg>
           </div>
+          <Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">
           <button className="w-full bg-[#ED5428] hover:bg-[#ED5428] text-white py-2 px-3 rounded-md font-semibold transition">
             Book a Demo Now
           </button>
+          </Link>
         </div>
 
       </div>

@@ -16,7 +16,7 @@ export default function AsSeenOn() {
     },
   ];
   return (
-    <section className="py-2 bg-[#ED5428] rubik-font">
+    <section className="py-2 overflow-hidden bg-[#ED5428] rubik-font">
       <div className="container mx-auto max-w-full px-4">
         <div className="flex flex-col items-center justify-center">
           <p className="font-bold text-[30px] md:text-md text-white pb-1 ">As Seen On</p>

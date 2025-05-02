@@ -27,7 +27,7 @@ export default function ImageCardSection({ cardsData = [] }){
                 height={420}
                 className="mx-auto mb-6 h-auto w-full max-w-[270px]"
               />
-              <h3 className="text-[18px] font-semibold group-hover:text-[#ED5428] transition-colors duration-300">
+              <h3 className="text-[18px] font-semibold hover:text-[#ED5428] transition-colors duration-300">
                 {card.title}
               </h3>
               <p className="rubik-font basic-font text-sm mt-3 leading-relaxed transition-colors duration-300">
@@ -41,4 +41,4 @@ export default function ImageCardSection({ cardsData = [] }){
   );
 };
 
-// export default ImageCardSection;
+
