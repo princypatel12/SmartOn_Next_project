@@ -5,7 +5,7 @@ import ProductCardSection from "@/components/ProductCardSection";
 
 export default function ProductPage(){
     return(
-        <main className="pt-17"> 
+        <main className="pt-15"> 
         <AboutSection
         title="Our Mobile Application"
         subtitle="Explore the world of SMARTON opportunities"/>

@@ -7,6 +7,9 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Keyboard, EffectFade } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 
 const slides = [
   "/images/logo/bannerImgs/bannerImg1.png",
@@ -37,7 +40,7 @@ export default function HeroSlider() {
         slidesPerView={1}
         loop={true}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
+        pagination={{  clickable: true }}
         keyboard={{ enabled: true }}
         effect="slide"
         speed={1200}
@@ -55,15 +58,27 @@ export default function HeroSlider() {
                 <div className="mt-20 space-x-0 space-y-4 sm:space-x-4 sm:space-y-0 flex flex-col sm:flex-row justify-center items-center">
                     <Link
                       href="/about-us"
-                      className="btn inline-block bg-[#ED5428] text-[16px] sm:text-[17px] px-6 sm:px-7 py-2.5 sm:py-3 rounded text-white shadow-lg transition hover:scale-105"
+                      className="btn inline-block bg-[#ED5428] text-[16px] sm:text-[17px] font-bold sm:px-7 py-2.5 sm:py-3 rounded group text-white shadow-lg transition hover:scale-105"
                     >
+              <span className="relative inline-block transition-all duration-300 px-2">
+                    <span className="group-hover:translate-x-[-1.5rem] transition-all duration-300">
                       About Us
+                    </span>
+                    <span className="absolute left-full group-hover:left-[-21] group-hover:ml-0 transition-all duration-300">
+                      →
+                    </span>
+               </span>
                     </Link>
                     <Link
                       href="/contact-us"
-                      className="btn inline-block border border-white text-[16px] sm:text-[17px] px-5 sm:px-6 py-2.5 sm:py-3 rounded text-white shadow-lg transition hover:scale-105 hover:bg-[#FFFFFF] hover:text-black"
+                      className="group btn inline-block border border-white font-bold text-[16px] sm:text-[17px] sm:px-6 py-2.5 sm:py-3 rounded text-white shadow-lg transition hover:scale-105 hover:bg-[#FFFFFF] hover:text-black"
                     >
+                    <span className="flex items-center gap-1">
                       Contact Us
+                      <span className="opacity-0 transform translate-x-[-4px] group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-black transition duration-300">
+                        →
+                      </span>
+                    </span>
                     </Link>
                   </div>
                 </div>

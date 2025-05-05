@@ -37,20 +37,20 @@ const awardsData = [
 
 export default function AwardCard() {
   return (
-    <section className="mb-8 pb-13 container max-w-3xl mx-auto">
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+    <section className="mb-8 pb-13 container max-w-3xl  mx-auto">
+      <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
         {awardsData.map((award, index) => (
           <li key={index} className="text-white">
-            <figure className="relative w-full overflow-hidden shadow-lg">
-              <div className="relative bg-[#252B48]">
+            <figure className="group relative w-full overflow-hidden shadow-lg">
+              <div className="relative bg-[#252B48] transform transition duration-300 group-hover:scale-105">
                 <Image
                   src={award.imageSrc}
                   alt={award.title}
                   width={400}
                   height={300}
-                  // className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover overflow-hidden"
                 />
-                <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute inset-0 group-hover:bg-black/50 transition duration-300" />
               </div>
               <figcaption className="absolute inset-0 flex items-end p-4 sm:p-6">
                 <p className="text-white text-lg sm:text-xl fs-22 rubik-font font-semibold leading-snug drop-shadow-md">

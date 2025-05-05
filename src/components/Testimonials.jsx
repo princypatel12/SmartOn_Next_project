@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import HighlightText from "./HighlightText";
 
 const testimonials = [
   {
@@ -26,43 +27,42 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section className="bg-white py-12 px-11">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="uppercase fs-17 text-sm font-semibold tracking-[1px] leading-[32px]">What our users say</span>
-          <h3 className="text-3xl md:text-4xl font-semibold text-gray-900 mt-2">
-            User{' '}
-            <span className="relative inline-block font-extrabold text-black">
-              Testimonials
-              <span className="absolute left-0 bottom-[-8px] w-full h-[8px] bg-gradient-to-r from-emerald-400 to-green-500 opacity-60 z-[-1]"></span>
-            </span>
-          </h3>
+          <span className="uppercase text-sm font-semibold tracking-[1px] leading-[32px]">What our users say</span>
+          <HighlightText title="User" highlight="Testimonials" />
         </div>
 
         {/* Testimonials */}
-        <div className="grid grid-cols-3 gap-8 rubik-font fs-17">
-          {testimonials.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white p-8 rounded-xl shadow-xl flex flex-col justify-between h-full"
-            >
-              <p className="text-gray-700 mb-6">{item.text}</p>
-              <div className="flex items-center gap-4">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  width={80}
-                  height={80}
-                  className="rounded-full"
-                />
-                <div>
-                  <div className="font-bold text-gray-900 text-lg">{item.name}</div>
-                  <div className="text-sm text-gray-500">{item.role}</div>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((item, index) => (
+         <div key={index} className="flex flex-col w-full">
+         {/* Card */}
+          <div className="bg-white p-6 rounded shadow-md text-start rubik-font leading-relaxed h-auto min-h-[220px]">
+        <p className="text-gray-700 fs-17 sm:text-base">
+          {item.text}
+        </p>
+      </div>
+
+      {/* Image, name, and role */}
+      <div className="mt-6 flex items-center">
+        <Image
+          src={item.image}
+          alt={item.name}
+          width={70}
+          height={70}
+          className="rounded-full object-cover w-[70px] h-[70px]"
+        />
+        <div className="flex flex-col ml-4">
+          <div className="font-bold text-gray-700 fs-18">{item.name}</div>
+          <div className="fs-18 text-gray-700">{item.role}</div>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );

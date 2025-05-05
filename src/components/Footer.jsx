@@ -4,63 +4,62 @@ import React from 'react';
 import Link from 'next/link';
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="bg-black text-[#80858F] pt-12 pb-6 px-11">
-      <div className="max-w-7xl mx-auto grid grid-cols-5 gap-2">
+      <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-5 gap-5">
         
         {/* Logo and Description */}
-        <div className="space-y-4 ">
-        <Link href="/" className="space-x-2">
-          <img
-            src="/images/logoTransparentBg.png"
-            alt="Smart On Logo"
-            className="w-[90px] mb-4"
-          />
-        </Link>
-
-          <p className="fs-17 rubik-font leading-[32px]">Experience the world with -<br />Smarton Glasses</p>
+        <div className="space-y-2">
+          <Link href="/" className="inline-block">
+            <img
+              src="/images/logoTransparentBg.png"
+              alt="Smart On Logo"
+              className="w-[90px]"
+            />
+          </Link>
+          <p className="fs-17 rubik-font leading-[28px]">Experience the world with -<br />Smarton Glasses</p>
           <div className="flex space-x-4 mt-4">
-            <FaFacebookF className="w-3 h-3 cursor-pointer hover:text-white fs-18" />
-            <FaLinkedinIn className="w-3 h-3 cursor-pointer hover:text-white fs-18" />
-            <FaTwitter className="w-3 h-3 cursor-pointer hover:text-white fs-18" />
-            <FaInstagram className="w-3 h-3 cursor-pointer hover:text-white fs-18" />
+            <FaFacebookF className="w-3 h-3 cursor-pointer text-white" />
+            <FaLinkedinIn className="w-3 h-3 cursor-pointer text-white" />
+            <FaTwitter className="w-3 h-3 cursor-pointer text-white" />
+            <FaInstagram className="w-3 h-3 cursor-pointer text-white" />
           </div>
         </div>
 
         {/* Company */}
         <div>
           <h4 className="text-white font-semibold mb-4 fs-17">Company</h4>
-          <ul className="space-y-2 fs-17 rubik-font leading-[32px]">
-            <li className="hover:text-[#ED5428]">Who we are</li>
-            <li className="flex items-center gap-2 hover:text-[#ED5428]">
+          <ul className="space-y-2 fs-17 rubik-font leading-[28px]">
+            <li className="hover:text-[#ED5428] cursor-pointer">Who we are</li>
+            <li className="flex items-center gap-2 hover:text-[#ED5428] cursor-pointer">
               Smarton App
               <span className="bg-gray-700 text-white text-xs px-2 py-0.5 rounded-full fs-10">HOT</span>
-            </li>
-            <li className="hover:text-[#ED5428]">Partner with Us</li>
-            <li className="hover:text-[#ED5428]">Smarton</li>
+               </li>
+            <li className="hover:text-[#ED5428] cursor-pointer">Partner with Us</li>
+            <li className="hover:text-[#ED5428] cursor-pointer">Smarton</li>
           </ul>
         </div>
 
         {/* Go To */}
         <div>
           <h4 className="text-white font-semibold mb-4 fs-17">Go To</h4>
-          <ul className="space-y-2 fs-17 rubik-font leading-[32px]">
-            <li className="hover:text-[#ED5428]">Home</li>
-            <li className="hover:text-[#ED5428]">Product</li>
-            <li className="hover:text-[#ED5428]">Partner with Smarton</li>
-            <li className="hover:text-[#ED5428]">Smarton</li>
-            <li className="hover:text-[#ED5428]">About US</li>
+          <ul className="space-y-2 fs-17 rubik-font leading-[28px]">
+            <li className="hover:text-[#ED5428] cursor-pointer">Home</li>
+            <li className="hover:text-[#ED5428] cursor-pointer">Product</li>
+            <li className="hover:text-[#ED5428] cursor-pointer">Partner with Smarton</li>
+            <li className="hover:text-[#ED5428] cursor-pointer">Smarton</li>
+            <li className="hover:text-[#ED5428] cursor-pointer">About Us</li>
           </ul>
         </div>
 
         {/* Need Help */}
         <div>
           <h4 className="text-white font-semibold mb-4 fs-17">Need help?</h4>
-          <p className="fs-17 rubik-font leading-[32px]">Call us</p>
-          <p className="text-white font-bold mb-4 fs-17 rubik-font leading-[32px]">(+91) 9104156317</p>
-          <p className="fs-17 rubik-font leading-[32px]">Email us</p>
-          <p className="text-white underline cursor-pointer fs-17 rubik-font leading-[32px]">support@sunbots.in</p>
+          <p className="fs-17 rubik-font leading-[28px]">Call us</p>
+          <p className="text-white mb-4 fs-17 rubik-font leading-[28px]">(+91) 9104156317</p>
+          <p className="fs-17 rubik-font leading-[28px]">Email us</p>
+          <p className="text-white underline cursor-pointer fs-17 rubik-font leading-[28px] break-all">support@sunbots.in</p>
         </div>
 
         {/* Newsletter */}
@@ -70,19 +69,26 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="bg-transparent outline-none text-sm flex-grow px-2 text-white"
+              className="bg-transparent outline-none fs-14 flex-grow text-white"
             />
-            <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M16 12H4m0 0l4-4m-4 4l4 4" />
-            </svg>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+            >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+           </svg>
+
           </div>
           <Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">
-          <button className="w-full bg-[#ED5428] hover:bg-[#ED5428] text-white py-2 px-3 rounded-md font-semibold transition">
-            Book a Demo Now
-          </button>
+            <button className="bg-[#ED5428] hover:bg-[#ED5428] text-white text-[16px] flex items-center px-3 py-1.5 leading-6 [letter-spacing:0.5px] rounded shadow transition">
+              Book a Demo Now
+            </button>
           </Link>
         </div>
-
       </div>
 
       {/* Bottom Line */}
@@ -96,6 +102,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
-export default Footer;
+

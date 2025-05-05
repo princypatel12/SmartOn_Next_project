@@ -6,7 +6,7 @@ import HighlightText from './HighlightText';
 export default function ImageContentSection({imageSrc,title,highlightText,content}){
     return(
         <section id="down-section" className="py-16">
-            <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
                 {/* left image section  */}
                 <div className="w-full mt-4">
                 <Image 
@@ -18,13 +18,13 @@ export default function ImageContentSection({imageSrc,title,highlightText,conten
                 />
                 </div>
                 {/* right content text  */}
-                <div className="w-[400px]">
+                <div className="md:w-[400px]w-[300px] md:px-0">
                 <HighlightText
                  title={title}
                  highlight={highlightText}
-                 customstyle="text-left ml-9"
+                 customstyle="text-left w-[350px]"
                  /> 
-                <p className="mt-6 ml-9 fs-17 rubik-font leading-7">{content}</p>
+                <p className="mt-6 md:px-0 md:text-justify fs-17 rubik-font leading-7">{content}</p>
                 </div>
             </div>
         </section>

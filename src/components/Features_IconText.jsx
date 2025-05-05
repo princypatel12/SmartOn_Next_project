@@ -43,10 +43,8 @@ export default function Features_IconTextconst() {
       }, []);
   return (
     <section className="background-position-center-top overflow-hidden">
-    <div
-      className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 px-11"
-      // data-anime='{"el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad"}'
-      
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 sm:px-6 md:px-11"
+       // data-anime='{"el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad"}'
     >
       {features.map((feature, index) => (
         <div
@@ -61,7 +59,8 @@ export default function Features_IconTextconst() {
             </div>
             <p className="inline-block font-alt font-bold mb-[5px] text-[18px] text-[#ed5328]
             ">{feature.title}</p>
-            <p className="feature_description rubik-font">{feature.description}</p>
+            <p className="text-black-700 fs-17 sm:text-base leading-relaxed rubik-font">{feature.description}</p>
+
           </div>
         </div>
       ))}

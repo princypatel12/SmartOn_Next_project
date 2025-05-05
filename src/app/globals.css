@@ -39,6 +39,40 @@ html,body {
 .rubik-font{
   font-family: var(--primary-font);
 }
+/* heroslider css */
+.swiper-pagination {
+  display: flex;
+  gap: 12px !important;
+  justify-content: center;
+  align-items: center;
+}
+/* white dots */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: white !important;
+  opacity: 0.6 !important;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 20px;
+  height: 20px;
+  /* padding-top: 5px; */
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8); 
+  box-sizing: border-box;
+}
+
+
 button .btn {
   padding:18px 34px;
  }
@@ -69,10 +103,10 @@ line-height:50px;
   margin-left: auto;
   margin-right: auto;
   color: rgb(29, 33, 48);
-  font-size:17px;
+  /* font-size:17px;
   font-weight:400;
   line-height:32px;
-  width:246.406px;
+  width:246.406px; */
 }
 @media (min-width: 768px) {
   .feature_description {
@@ -131,6 +165,9 @@ line-height:50px;
 .fs-17{
   font-size:17px;
 }
+/* .user-border-radius{
+  border-radius:50%;
+} */
 /* latestblogs css */
 .fs-16 {
   font-size: 16px;
@@ -147,7 +184,7 @@ line-height:50px;
 }
 /* aboutSection css */
 .bg-gradient-black-green {
-  background-color: #1d2130;
+  background-color: #1C1F26;
   /* height: 489px; */
 }
 /* imagecontentsection css */

@@ -5,7 +5,7 @@ import PartnersSlider from "@/components/PartnersSlider";
 
 export default function PartnerWithSmartonPage(){
     return(
-        <main className="pt-17">
+        <main className="pt-15">
         <AboutSection
         title="Meet Us"
         subtitle="Partner with Smarton"/>

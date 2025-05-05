@@ -9,7 +9,7 @@ import TeamMemberCards from "@/components/TeamMemberCards";
 
 export default function AboutPage() {
   return (
-    <main className="pt-17"> 
+    <main className="pt-15"> 
         <AboutSection
         title="About Us"
         subtitle="We specialize in Assistive Technology"

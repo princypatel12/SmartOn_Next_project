@@ -1,6 +1,8 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 import {Swiper,SwiperSlide}from 'swiper/react';
 import {Navigation,Autoplay,Pagination,Keyboard} from 'swiper/modules';
 import 'swiper/css';
@@ -26,6 +28,14 @@ const slides=[
 ];
 
 export default function MissionVissonSlider({image1,image2}){
+    const containerRef = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ['start end', 'end start'],
+    });
+
+    const y = useTransform(scrollYProgress, [0, 1], [-80, 100]);
     return(
         <section className="relative bg-[url('/images/Aboutusimg/vertical-line-bg.svg')] bg-no-repeat py-20 ">
             <div className="container mx-auto gap-9 grid grid-cols-2">
@@ -63,7 +73,7 @@ export default function MissionVissonSlider({image1,image2}){
                    </div>
                 </div>
                 {/* right image section  */}
-                <div className="flex flex-col items-end">
+                <div ref={containerRef} className="flex flex-col items-end">
                     <div className="w-[80%] z-0 relative">
                         <Image
                         src={image1}
@@ -72,16 +82,21 @@ export default function MissionVissonSlider({image1,image2}){
                         height={400}
                         className="rounded"/>
                     </div>
-                    <div className="absolute top-54 left-120 w-[25%] z-10">
+                    <motion.div
+        style={{ y }}
+        className="absolute top-54 left-120 w-[25%] z-10"
+      >
+                    {/* <div className="absolute top-54 left-120 w-[25%] z-10"> */}
                         <Image 
                         src={image2}
                         alt="mv2 image"
                         width={400}
                         height={250}
                         className="rounded"/>
+                        </motion.div>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
         </section>
     )
 

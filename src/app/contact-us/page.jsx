@@ -4,7 +4,7 @@ import GetInTouchForm from "@/components/GetInTouchForm";
 
 export default function ContactUsPage(){
     return(
-    <main className="pt-17">
+    <main className="pt-15">
         <AboutSection
         title="Contact us"
         subtitle="Get in touch with our Team"/>

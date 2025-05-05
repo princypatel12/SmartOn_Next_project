@@ -17,9 +17,11 @@ const partners = [
 ];
 
 export default function DonorsPartners() {
+  const firstItems = partners.slice(0, partners.length - 3);
+  const lastThreeItems = partners.slice(-3);
   return (
     <section className="bg-[#1D2130] py-12 px-11">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="mb-10 text-center md:text-left">
           <h3 className="text-white text-2xl md:text-3xl font-medium font-semibold tracking-tight">
@@ -32,9 +34,9 @@ export default function DonorsPartners() {
         
         </div>
 
-        {/* Partner Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-          {partners.map((fileName, index) => (
+      
+        <div className="flex flex-wrap gap-6 mb-6 justify-center md:justify-start">
+          {firstItems.map((fileName, index) => (
             <div
               key={index}
               className="bg-white rounded-md text-center shadow-lg hover:shadow-xl transition duration-300"
@@ -43,8 +45,27 @@ export default function DonorsPartners() {
                 <Image
                   src={`/images/partners/${fileName}`}
                   alt={`Partner ${index + 1}`}
-                  width={250}
-                  height={50}
+                  width={190}
+                  height={60}
+                  className="object-contain h-[60px]"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* last 3 images for align center  */}
+        <div className="flex justify-center gap-6 flex-wrap">
+          {lastThreeItems.map((fileName, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-md text-center shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <div className="py-2 px-6 flex justify-center items-center h-full">
+                <Image
+                  src={`/images/partners/${fileName}`}
+                  alt={`Partner ${partners.length - 3 + index + 1}`}
+                  width={190}
+                  height={60}
                   className="object-contain h-[60px]"
                 />
               </div>
