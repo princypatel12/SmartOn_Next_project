@@ -1,3 +1,7 @@
+"use client";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import React from 'react';
 import Image from 'next/image';
 import { FaLinkedin } from 'react-icons/fa';
@@ -50,10 +54,13 @@ const teamMembers = [
 ];
 
 export default function TeamMemberCards({ title, highlightText }) {
+  useEffect(() => {
+          AOS.init({ duration: 800, once: true });
+        }, []);
   return (
-    <section className="py-12 px-4 max-w-3xl mx-auto">
+    <section className="md:py-12 py-0  px-4 max-w-3xl mx-auto">
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <span className="uppercase text-sm font-semibold tracking-wider text-gray-500">
+        <span className="uppercase text-sm font-semibold tracking-wider text-black-500">
           Core people
         </span>
         <HighlightText title={title} highlight={highlightText} />
@@ -61,8 +68,11 @@ export default function TeamMemberCards({ title, highlightText }) {
 
       <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
         {teamMembers.map((member, index) => (
-          <div key={index} className="text-center">
-            <div className="overflow-hidden shadow-md group bg-white hover:shadow-xl">
+          <div key={index} className="text-center"
+          data-aos="fade-up"
+          data-aos-delay={index * 200}
+          >
+            <div className="relative overflow-hidden shadow-md group transition-all duration-300 bg-white hover:shadow-xl">
               <Image
                 src={member.image}
                 alt="membername"
@@ -71,10 +81,13 @@ export default function TeamMemberCards({ title, highlightText }) {
                 className="w-full h-auto object-cover"
               />
               <div className="p-4">
+              <div className="transition-transform duration-300 group-hover:-translate-y-1">
                 <h4 className="font-bold text-[19px] text-gray-800">{member.name}</h4>
                 <p className="uppercase text-[16px] text-gray-700">{member.role}</p>
+                </div>
                 {member.linkedin && (
-                  <div className="mt-2">
+                   <div className="mt-2 transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2">
+               
                     <Link
                       href={member.linkedin}
                       target="_blank"
@@ -92,3 +105,4 @@ export default function TeamMemberCards({ title, highlightText }) {
     </section>
   );
 }
+

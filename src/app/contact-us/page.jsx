@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import AddressSection from "@/components/AddressSection";
 import GetInTouchForm from "@/components/GetInTouchForm";
+import LocationMapSection from "@/components/LocationMapSection";
 
 export default function ContactUsPage(){
     return(
@@ -12,6 +13,7 @@ export default function ContactUsPage(){
         <GetInTouchForm
          title="How we can"
          highlightText="help"/>
+         <LocationMapSection/>
     </main>
   );
 }

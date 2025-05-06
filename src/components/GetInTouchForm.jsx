@@ -20,7 +20,6 @@ export default function GetInTouchForm({title,highlightText}){
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You would typically send `formData` to your backend API here
     console.log('Submitted:', formData);
     setSubmitted(true);
   };
@@ -41,12 +40,15 @@ export default function GetInTouchForm({title,highlightText}){
                     <input className="form-input border border-sm rounded p-3" type="email" name="email" placeholder="Your email address*" value={formData.email} onChange={handleChange} required/>
                     <input className="form-input border border-sm rounded p-3" type="phone" name="phone" placeholder="Your phone" value={formData.phone} onChange={handleChange}/>
                     <input className="form-input border border-sm rounded p-3" type="text" name="subject" placeholder="Your subject" value={formData.subject} onChange={handleChange}/>
-                    </form>
-                    <div className="mt-6 ">
-                    <textarea className="form-textarea border border-sm p-3 rounded md:col-span-2 rubik-font fs-16" rows="4"cols="96" name="comment" placeholder="Your message" value={formData.comment} onChange={handleChange}/>
-                    </div>
-                    <div className="grid grid-cols-2 mt-2">
-                    <div className="md:col-span-1 w-[400px] text-sm text-[15px] leading-5 rubik-font inline-block">
+                    <textarea
+                    className="form-textarea border border-sm p-3 rounded md:col-span-2 w-full"
+                    rows="4"
+                    name="comment"
+                    placeholder="Your message"
+                    value={formData.comment}
+                    onChange={handleChange}
+                   />
+                   <div className="md:col-span-1 text-sm text-[15px] leading-5 rubik-font">
             We are committed to protecting your privacy. We will never collect
             information about you without your explicit consent.
             </div>
@@ -59,13 +61,12 @@ export default function GetInTouchForm({title,highlightText}){
             </button>
           </div>
           
-          </div>
-         
-          {submitted && (
+            {submitted && (
             <div className="col-span-2 text-green-600 font-medium mt-4 text-center">
               Message sent successfully!
             </div>
           )}
+          </form>
                 
             </div>
         </div>

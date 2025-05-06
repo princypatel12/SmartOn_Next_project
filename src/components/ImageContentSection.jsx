@@ -8,7 +8,8 @@ export default function ImageContentSection({imageSrc,title,highlightText,conten
         <section id="down-section" className="py-16">
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
                 {/* left image section  */}
-                <div className="w-full mt-4">
+                <div className="relative w-full mt-4">
+        
                 <Image 
                  src={imageSrc}
                  alt="Frame 1 image"
@@ -16,15 +17,17 @@ export default function ImageContentSection({imageSrc,title,highlightText,conten
                  height={500}
                  className="w-full rounded"
                 />
+                
                 </div>
                 {/* right content text  */}
-                <div className="md:w-[400px]w-[300px] md:px-0">
+                <div className="md:w-[400px] w-[300px] md:px-0">
                 <HighlightText
                  title={title}
                  highlight={highlightText}
                  customstyle="text-left w-[350px]"
                  /> 
                 <p className="mt-6 md:px-0 md:text-justify fs-17 rubik-font leading-7">{content}</p>
+
                 </div>
             </div>
         </section>
