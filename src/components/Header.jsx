@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation'; 
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,12 +14,14 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md px-11 ">
-      <div className="max-w-7xl py-4 flex justify-between">
+      <div className="py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="space-x-2">
-          <img
+          <Image
             src="/images/logoTransparentBg.png"
             alt="Smart On Logo"
+            width={90}
+            height={90}
             className="w-[90px]"
           />
         </Link>
@@ -25,7 +29,7 @@ export default function Header() {
         <button
           className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle Menu"
+          aria-label="Toggle Menu" 
         >
           {isOpen ? <X size={24} className="text-[#ED5428]"/> : <Menu size={24} className="text-[#ED5428]" />}
         </button>

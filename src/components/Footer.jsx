@@ -45,11 +45,11 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-semibold mb-4 fs-17">Go To</h4>
           <ul className="space-y-2 fs-17 rubik-font leading-[28px]">
-            <li className="hover:text-[#ED5428] cursor-pointer">Home</li>
-            <li className="hover:text-[#ED5428] cursor-pointer">Product</li>
-            <li className="hover:text-[#ED5428] cursor-pointer">Partner with Smarton</li>
-            <li className="hover:text-[#ED5428] cursor-pointer">Smarton</li>
-            <li className="hover:text-[#ED5428] cursor-pointer">About Us</li>
+            <li className="hover:text-[#ED5428] cursor-pointer"><Link href="/">Home</Link></li>
+            <li className="hover:text-[#ED5428] cursor-pointer"><Link href="/product">Product</Link></li>
+            <li className="hover:text-[#ED5428] cursor-pointer"><Link href="/partnerwithsmarton">Partner with Smarton</Link></li>
+            <li className="hover:text-[#ED5428] cursor-pointer"><Link href="/">Smarton</Link></li>
+            <li className="hover:text-[#ED5428] cursor-pointer"><Link href="/about-us">About Us</Link></li>
           </ul>
         </div>
 
