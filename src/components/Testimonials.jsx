@@ -2,6 +2,9 @@
 
 import Image from 'next/image';
 import HighlightText from "./HighlightText";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const testimonials = [
   {
@@ -25,6 +28,9 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+    useEffect(() => {
+          AOS.init({ duration: 800, once: true });
+        }, []);
   return (
     <section className="bg-white py-12 px-11">
       <div className="max-w-3xl mx-auto">
@@ -37,7 +43,10 @@ export default function Testimonials() {
         {/* Testimonials */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((item, index) => (
-         <div key={index} className="flex flex-col w-full">
+         <div key={index} 
+         className="flex flex-col w-full"
+         data-aos="fade-up"
+         data-aos-delay={index * 200}>
          {/* Card */}
           <div className="bg-white p-6 rounded shadow-md text-start rubik-font leading-relaxed h-auto min-h-[220px]">
         <p className="text-gray-700 fs-17 sm:text-base">

@@ -34,7 +34,7 @@ export default function FeedbackSection() {
           {feedbackData.map((item, index) => (
             <div
               key={index}
-              className="box-shadow-quadruple-large box-shadow-quadruple-large-hover w-full h-[510px] sm:w-[200px] md:w-[250px] bg-white rounded-2xl shadow-lg px-3 py-3"
+              className="box-shadow-quadruple-large box-shadow-quadruple-large-hover w-[300] h-[510px] sm:w-[200px] md:w-[250px] bg-white rounded-2xl shadow-lg px-3 py-3"
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
@@ -45,7 +45,6 @@ export default function FeedbackSection() {
                 <iframe
                   src={item.videoUrl}
                   className="w-full h-[350px]"
-                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>

@@ -55,6 +55,8 @@ html,body {
   border-radius: 50%;
   position: relative;
   transition: all 0.3s ease;
+  position: relative;
+  bottom: 100px;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1 !important;

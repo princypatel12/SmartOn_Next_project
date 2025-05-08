@@ -3,7 +3,9 @@
 
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
+// this is animation library
 import { motion} from 'framer-motion';
+// react hook for detect the dom element enter or leave viewport 
 import { useInView } from 'react-intersection-observer';  
 
 export default function SmartOn_TextVideo() {
@@ -16,11 +18,11 @@ export default function SmartOn_TextVideo() {
     <motion.section
     ref={ref}
       initial={{ scale: 0.95 }}
-      animate={{ scale: inView ? 1 : 0.9 }}
+      animate={{ scale: inView ? 1 : 0.7 }}//here if true means its on full size and when scroll then its small up to 0.6
       transition={{ duration: 0.6, ease: 'easeInOut' }}
       className="relative overflow-hidden bg-[#FFF1ED]"
   >
-    <section className="relative overflow-hidden bg-[#FFF1ED]">
+    {/* <section className="relative overflow-hidden bg-[#FFF1ED]"> */}
         <div className="max-w-full mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 p-6 items-center gap-12 my-4">
             {/* Left Content */}
@@ -68,13 +70,13 @@ export default function SmartOn_TextVideo() {
                 className="w-full aspect-video rounded-2xl shadow-md"
                 src="https://www.youtube.com/embed/clJOAVADrsc?si=SZv1u1FifbkrGK-d"
                 title="Smarton youtube video"
-                // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
             </div>
           </div>
         </div>
-    </section>
+    {/* </section> */}
     </motion.section>
   );
 }

@@ -23,7 +23,7 @@ const partners = [
 export default function PartnersSlider() {
   return (
     <section className="bg-white py-8">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-12">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 0, disableOnInteraction: false }}
@@ -34,14 +34,14 @@ export default function PartnersSlider() {
             768: { slidesPerView: 3 },
             992: { slidesPerView: 4 },
           }}
-          allowTouchMove={false}
+        
         >
           {partners.map((url, index) => (
             <SwiperSlide key={index} className="flex justify-center items-center py-4">
              
                 <Image
                   src={url}
-                  alt={`Partner ${index + 1}`}
+                  alt="partner logo image"
                   width={200}
                   height={60}
                   className="h-[60px] object-contain"

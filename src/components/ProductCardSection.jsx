@@ -1,4 +1,4 @@
-import ImageCards from './ImageCards';
+import ImageCards from '@/components/ImageCards';
 
 const productCardData = [
 {

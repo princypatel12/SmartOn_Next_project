@@ -41,7 +41,7 @@ export default function Header() {
           <Link href="/partnerwithsmarton" className={`hover:text-gray-300 transition ${isActive('/partnerwithsmarton')}`}>Partner with Smarton</Link>
           <Link href="/contact-us" className={`hover:text-gray-300 transition ${isActive('/contact-us')}`}>Contact Us</Link>
           <Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">
-            <button className="bg-[#ED5428] hover:bg-[#ED5428] text-white text-[16px] flex items-center px-3 py-1.5 leading-6 [letter-spacing:0.5px] rounded shadow transition">
+            <button className="bg-[#ED5428] cursor-pointer text-white text-[16px] flex items-center px-3 py-1.5 leading-6 [letter-spacing:0.5px] rounded shadow transition">
               Book a Demo Now
             </button>
           </Link>

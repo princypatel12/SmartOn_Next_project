@@ -1,6 +1,9 @@
 'use client';
 
 import Image from 'next/image';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const partners = [
   '1. VOSAP.jpg',
@@ -17,6 +20,9 @@ const partners = [
 ];
 
 export default function DonorsPartners() {
+  useEffect(() => {
+        AOS.init({ duration: 800, once: true });
+      }, []);
   const firstItems = partners.slice(0, partners.length - 3);
   const lastThreeItems = partners.slice(-3);
   return (
@@ -35,17 +41,19 @@ export default function DonorsPartners() {
         </div>
 
       
-        <div className="flex flex-wrap gap-6 mb-6 justify-center md:justify-start">
+        <div className="flex flex-wrap gap-6 mb-6 justify-center">
           {firstItems.map((fileName, index) => (
             <div
               key={index}
-              className="bg-white rounded-md text-center shadow-lg hover:shadow-xl transition duration-300"
+              className="bg-white rounded-md text-center transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
-              <div className="py-2 px-6 flex justify-center items-center h-full">
+              <div className="py-2 px-4 flex justify-center items-center h-full">
                 <Image
                   src={`/images/partners/${fileName}`}
-                  alt={`Partner ${index + 1}`}
-                  width={190}
+                  alt="partners image logo"
+                  width={200}
                   height={60}
                   className="object-contain h-[60px]"
                 />
@@ -59,12 +67,14 @@ export default function DonorsPartners() {
             <div
               key={index}
               className="bg-white rounded-md text-center shadow-lg hover:shadow-xl transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
-              <div className="py-2 px-6 flex justify-center items-center h-full">
+              <div className="py-2 px-4 flex justify-center items-center h-full">
                 <Image
                   src={`/images/partners/${fileName}`}
-                  alt={`Partner ${partners.length - 3 + index + 1}`}
-                  width={190}
+                  alt="partners image logo"
+                  width={200}
                   height={60}
                   className="object-contain h-[60px]"
                 />

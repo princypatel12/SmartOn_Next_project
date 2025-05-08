@@ -1,4 +1,8 @@
+"use client";
 import Image from 'next/image';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const awardsData = [
   {
@@ -36,11 +40,18 @@ const awardsData = [
 ];
 
 export default function AwardCard() {
+     useEffect(() => {
+             AOS.init({ duration: 800, once: true });
+           }, []);
   return (
-    <section className="mb-8 pb-13 container max-w-3xl  mx-auto">
+    <section className="mb-10 pb-13 container mx-auto">
       <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
         {awardsData.map((award, index) => (
-          <li key={index} className="text-white">
+          <li key={index} 
+          className="text-white"
+          data-aos="fade-up"
+          data-aos-delay={index * 100}
+          >
             <figure className="group relative w-full overflow-hidden shadow-lg">
               <div className="relative bg-[#252B48] transform transition duration-300 group-hover:scale-105">
                 <Image
@@ -53,7 +64,7 @@ export default function AwardCard() {
                 <div className="absolute inset-0 group-hover:bg-black/50 transition duration-300" />
               </div>
               <figcaption className="absolute inset-0 flex items-end p-4 sm:p-6">
-                <p className="text-white text-lg sm:text-xl fs-22 rubik-font font-semibold leading-snug drop-shadow-md">
+                <p className="text-white rubik-font fs-22 rubik-font font-semibold leading-snug">
                   {award.title}
                 </p>
               </figcaption>

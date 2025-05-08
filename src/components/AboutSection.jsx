@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const AboutSection = ({ title, subtitle, backgroundImage }) => {
+export default function AboutSection({ title, subtitle, backgroundImage }){
   const handleScrollDown = () => {
     const section = document.getElementById('down-section');
     if (section) {
@@ -71,10 +71,7 @@ const AboutSection = ({ title, subtitle, backgroundImage }) => {
               />
             </svg>
           </div>
-          
-         
-
-            </button>
+           </button>
           </div>
         </div>
       </div>
@@ -82,4 +79,4 @@ const AboutSection = ({ title, subtitle, backgroundImage }) => {
   );
 };
 
-export default AboutSection;
+

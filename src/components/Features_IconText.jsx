@@ -37,7 +37,7 @@ const features = [
   },
 ];
 
-export default function Features_IconTextconst() {
+export default function Features_IconText() {
      useEffect(() => {
         AOS.init({ duration: 800, once: true });
       }, []);
@@ -57,7 +57,7 @@ export default function Features_IconTextconst() {
             <div className="mb-1">
               <Image src={feature.icon} alt={feature.title} width={50} height={50} />
             </div>
-            <p className="inline-block font-alt font-bold mb-[5px] text-[18px] text-[#ed5328]
+            <p className="inline-block font-bold mb-[5px] text-[18px] text-[#ed5328]
             ">{feature.title}</p>
             <p className="text-black-700 fs-17 sm:text-base leading-relaxed rubik-font">{feature.description}</p>
 

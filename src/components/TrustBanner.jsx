@@ -9,7 +9,7 @@ export default function TrustBanner() {
       }, []);
 
     return (
-      <div className="mt-5 sm:mt-[30px] font-normal" data-aos="fade-up" data-aos-delay="200">
+      <div className="mt-5 sm:mt-[30px]" data-aos="fade-up" data-aos-delay="200">
         <div className="w-full text-center">
           <div className="inline-block bg-neutral-800 font-semibold text-white uppercase rounded-full px-3 py-1 mr-2 sm:my-2 rubik-font fs-12">
             trust

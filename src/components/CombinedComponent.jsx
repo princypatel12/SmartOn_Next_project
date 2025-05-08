@@ -1,6 +1,6 @@
-import HighlightText from "./HighlightText";
+import HighlightText from "@/components/HighlightText";
 import FeedbackSection from "@/components/FeedbackSection";
-import TrustBanner from "./TrustBanner";
+import TrustBanner from "@/components/TrustBanner";
 
 
 export default function CombinedComponent(){
