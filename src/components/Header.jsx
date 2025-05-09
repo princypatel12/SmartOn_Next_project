@@ -13,7 +13,7 @@ export default function Header() {
   const isActive = (href) => pathname === href ? 'text-gray-400' : '';
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md px-11 ">
+    <header className="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md px-11">
       <div className="py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="space-x-2">
@@ -31,7 +31,7 @@ export default function Header() {
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu" 
         >
-          {isOpen ? <X size={24} className="text-[#ED5428]"/> : <Menu size={24} className="text-[#ED5428]" />}
+          {isOpen ? <X size={24} className="text-[#ED5428] cursor-pointer"/> : <Menu size={24} className="text-[#ED5428] cursor-pointer" />}
         </button>
 
         <nav className="hidden md:flex space-x-8 text-[17px] items-center">

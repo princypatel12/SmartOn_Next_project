@@ -56,7 +56,7 @@ export default function HeroSlider() {
             
               <div className="max-w-full mx-auto h-full flex items-center justify-center">
                 <div className="text-white z-10"data-aos="fade-up" data-aos-once="false">
-                <div className="mt-30 space-x-0 space-y-4 sm:space-x-4 sm:space-y-0 flex flex-col sm:flex-row justify-center items-center">
+                <div className="mt-33 space-x-0 space-y-4 sm:space-x-4 sm:space-y-0 flex flex-col sm:flex-row justify-center items-center">
                     <Link
                       href="/about-us"
                       className="inline-block bg-[#ED5428] text-[19px] sm:text-[17px] font-bold px-5 sm:px-7 py-2.5 sm:py-3.5 rounded group text-white shadow-lg"

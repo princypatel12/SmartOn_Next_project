@@ -1,6 +1,4 @@
 'use client';
-
-
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 // this is animation library
@@ -18,7 +16,7 @@ export default function SmartOn_TextVideo() {
     <motion.section
     ref={ref}
       initial={{ scale: 0.95 }}
-      animate={{ scale: inView ? 1 : 0.7 }}//here if true means its on full size and when scroll then its small up to 0.6
+      animate={{ scale: inView ? 1 : 0.7 }}//here if true means its on full size and when scroll then its small up to 0.7
       transition={{ duration: 0.6, ease: 'easeInOut' }}
       className="relative overflow-hidden bg-[#FFF1ED]"
   >
