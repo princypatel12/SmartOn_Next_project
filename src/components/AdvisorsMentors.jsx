@@ -45,28 +45,28 @@ export default function AdvisorsMentors({ title, highlightText }) {
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:px-6 md:px-0 max-w-6xl mx-auto">
-              {supporters.map((member, index) => (
+              {supporters.map((supporter, index) => (
                 <div key={index} className="text-center"
                 data-aos="fade-up"
                 data-aos-delay={index * 200}>
                   <div className="overflow-hidden shadow-md bg-white group transition-all duration-300">
                     <Image
-                    src={member.image}
-                    alt={member.name}
+                    src={supporter.image}
+                    alt={supporter.name}
                     width={400}
                     height={300}
                     className="w-full h-auto object-cover"
                     />
                   <div className="p-4">
                     <div className="transition-transform duration-300 group-hover:-translate-y-1">
-                      <h4 className="font-bold text-[19px] text-gray-800">{member.name}</h4>
-                      <p className="uppercase text-[16px] text-gray-700">{member.role}</p>
+                      <h4 className="font-bold text-[19px] text-gray-800">{supporter.name}</h4>
+                      <p className="uppercase text-[16px] text-gray-700">{supporter.role}</p>
                     </div>
           
-                    {member.linkedin && (
+                    {supporter.linkedin && (
                       <div className="mt-2 transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2">
                         <Link
-                          href={member.linkedin}
+                          href={supporter.linkedin}
                           target="_blank"
                           className="inline-block text-black-600 hover:text-black-800"
                         >
@@ -79,7 +79,6 @@ export default function AdvisorsMentors({ title, highlightText }) {
     </div>
   ))}
 </div>
-
-        </section>
-    );
+</section>
+  );
 }

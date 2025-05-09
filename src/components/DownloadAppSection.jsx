@@ -28,7 +28,7 @@ export default function DownloadAppSection(){
         });
     },[]);
     return(
-        <section className="relative py-20 px-4 md:px-8 bg-white flex justify-end">
+        <section className="relative z-10 md:py-12 px-4 md:px-8 bg-white flex justify-end">
             <div className="text-start w-[450px]">
             <div className="inline-block bg-[#ED5428] text-white text-[12px] font-semibold uppercase rounded-full px-3 py-1 mb-4">
                 How it works

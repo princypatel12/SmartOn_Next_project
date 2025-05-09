@@ -13,7 +13,7 @@ export default function AboutPage() {
         <AboutSection
         title="About Us"
         subtitle="We specialize in Assistive Technology"
-        backgroundImage="https://via.placeholder.com/1920x1100"
+        // backgroundImage="https://via.placeholder.com/1920x1100"
       />
       <ImageContentSection
       imageSrc="/images/Aboutusimg/Frame 1.png"

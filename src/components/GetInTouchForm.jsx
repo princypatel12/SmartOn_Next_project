@@ -10,7 +10,7 @@ export default function GetInTouchForm({title,highlightText}){
         comment:'',
     });
     const [submitted, setSubmitted] = useState(false);
-
+  // this triggers when user type any thing in the form 
   const handleChange = (e) => {
     setFormData((prev) => ({
       ...prev,
@@ -19,7 +19,7 @@ export default function GetInTouchForm({title,highlightText}){
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();//stop to reloading page
     console.log('Submitted:', formData);
     setSubmitted(true);
   };

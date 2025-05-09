@@ -1,7 +1,7 @@
 "use client";
-import React, { useRef } from 'react';
+import React, { useRef } from 'react';//stores mutable value 
 import Image from 'next/image';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';//hooks use here
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Pagination, Keyboard } from 'swiper/modules';
 import 'swiper/css';
@@ -15,30 +15,31 @@ const slides = [
     description:"To empower individuals with visual impairments through innovative, AI-driven technology, enhancing their Education, Productivity and Growth in life.",
   },
   {
-    label: 'Our Vision',
+    lable: 'Our Vision',
     heading: 'Creating a Barrier-Free Future',
     description:"Aligned with VOSAP's Vision 2047, Divyangjan including VI and Blind should be contributing $1Tn to India's Economy by 2047",
   },
   {
-    label: 'Core Value',
+    lable: 'Core Value',
     heading: 'Driven by Innovation and Empathy',
     description:'Smarton values innovation, empathy, and accessibility, empowering individuals with visual impairments to live independently with reliable, user-friendly technology.',
   },
 ];
 
 export default function MissionVisionSlider({ image1, image2 }) {
-  const containerRef = useRef(null);
+  const containerRef = useRef(null); 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ['start end', 'end start'],
+    offset: ['start end', 'end start'],//top of the element and bottom of the element
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-80, 100]);
+  // const x = useTransform(scrollYProgress, [0, 1], [100, -80]);
+  const y = useTransform(scrollYProgress, [0, 1], [-80, 100]);//moves element up 80 and down 100
 
   return (
-    <section className="relative md:py-20 py-0 md:mb-10 mb-0">
+    <section className="relative md:pb-20 md:mb-12 mb-0">
       <div className="max-w-4xl px-6 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 ">
-        {/* Text + Swiper Section */}
+        {/* left side Text Section */}
         <div>
           <Swiper
             modules={[Navigation, Autoplay, Pagination, Keyboard]}
@@ -75,7 +76,9 @@ export default function MissionVisionSlider({ image1, image2 }) {
         {/* Right Image Section */}
         <div ref={containerRef} className="relative flex flex-col items-center md:items-end space-y-6 md:space-y-0">
           {/* Image-1 */}
-          <div className="w-[100%] relative z-0">
+          <div 
+          // style={{ x }}
+          className="w-[100%] relative z-0">
             <Image
               src={image1}
               alt="mv1 image"
@@ -102,12 +105,12 @@ export default function MissionVisionSlider({ image1, image2 }) {
 
 
           {/*second image on mobile  */}
-          <div className="block md:hidden w-[80%]">
+          <div className="block md:hidden w-[100%]">
             <Image
               src={image2}
               alt="mv2 image"
-              width={400}
-              height={250}
+              width={600}
+              height={400}
               className="rounded w-full h-auto"
             />
           </div>

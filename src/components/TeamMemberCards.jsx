@@ -66,7 +66,7 @@ export default function TeamMemberCards({ title, highlightText }) {
         <HighlightText title={title} highlight={highlightText} />
       </div>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-3 md:grid-cols-4 gap-6">
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center"
           data-aos="fade-up"
