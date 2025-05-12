@@ -8,5 +8,5 @@ export default function AosEffect() {
     AOS.init({ duration: 800, once: true });
   }, []);
 
-  return null; // No visual output needed
+  return null;
 }

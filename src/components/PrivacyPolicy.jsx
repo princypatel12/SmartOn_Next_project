@@ -31,7 +31,7 @@ export default function PrivacyPolicy(){
 
       <FooterPolicyReuseSection title="Disclosure of Your Information">
         <p className="mb-4">Clarifications are added to ensure transparency about third-party data sharing: </p>
-        <p classname="space-y-3"><strong>Anonymized Data Sharing: </strong> For the purpose of improving Smarton's functionalities, some non-personally identifiable information may be shared with research partners.</p>
+        <p className="space-y-3"><strong>Anonymized Data Sharing: </strong> For the purpose of improving Smarton's functionalities, some non-personally identifiable information may be shared with research partners.</p>
         <p><strong>Compliance and Safety: </strong>Highlighting our commitment to disclose information when necessary for safety, compliance with legal obligations, or to protect our rights and those of our users.</p>
       </FooterPolicyReuseSection>
 

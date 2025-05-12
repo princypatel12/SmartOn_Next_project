@@ -15,7 +15,7 @@ export default function ProfileCard({ name, role, image, linkedin, index }) {
           alt={name}
           width={300}
           height={300}
-          className="w-full h-[300px] object-cover"
+          className="w-full h-full md:h-[300px] object-cover"
         />
         <div className="p-4">
           <div className="transition-transform duration-300 group-hover:-translate-y-1">

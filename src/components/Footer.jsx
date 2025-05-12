@@ -41,12 +41,16 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-4 fs-17">Company</h4>
           <ul className="space-y-2 fs-17 rubik-font leading-[28px]">
             <li className="hover:text-[#ED5428] cursor-pointer">Who we are</li>
-            <li className="flex items-center gap-2 hover:text-[#ED5428] cursor-pointer">
+            <Link href="https://play.google.com/store/apps/details?id=com.smarton.sunbots&pcampaignid=web_share">
+            <li className="flex items-center gap-2 hover:text-[#ED5428] cursor-pointer mb-2">
               Smarton App
               <span className="bg-gray-700 text-white text-xs px-2 py-0.5 rounded-full fs-10">HOT</span>
                </li>
-            <li className="hover:text-[#ED5428] cursor-pointer">Partner with Us</li>
-            <li className="hover:text-[#ED5428] cursor-pointer">Smarton</li>
+               </Link>
+               <Link href="/partnerwithsmarton">
+            <li className="hover:text-[#ED5428] cursor-pointer mb-2">Partner with Us</li></Link>
+            <Link href="/">
+            <li className="hover:text-[#ED5428] cursor-pointer">Smarton</li></Link>
           </ul>
         </div>
 
