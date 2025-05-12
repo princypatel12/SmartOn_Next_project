@@ -1,8 +1,10 @@
-'use client';
+// 'use client';
 
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AosEffect from "./AosEffect";
+
+// import { useEffect } from 'react';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const feedbackData = [
   {
@@ -24,11 +26,12 @@ const feedbackData = [
 ];
 
 export default function FeedbackSection() {
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 800, once: true });
+  // }, []);
   return (
       <div className="max-w-7xl mx-auto pt-7 pb-3 px-4 mb-10">
+        <AosEffect/>
         {/* Feedback Cards */}
         <div className="flex flex-wrap justify-center gap-5">
           {feedbackData.map((item, index) => (

@@ -20,7 +20,7 @@ export default function AsSeenOn() {
       <div className="container mx-auto max-w-full px-4">
         <div className="flex flex-col items-center justify-center">
           <p className="font-bold text-[30px] md:text-md text-white pb-1 ">As Seen On</p>
-          <div className="flex flex-wrap items-center justify-center gap-17 pt-4 py-5">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-17 pt-4 py-5">
              {asSeenLogo.map((logo,index)=>(
               <Image key={index} src={logo.src} alt={logo.alt} width={80} height={60} />
              ))}

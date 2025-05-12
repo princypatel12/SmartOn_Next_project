@@ -1,16 +1,18 @@
-'use client';
+// 'use client';
 
 import Image from 'next/image';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AosEffect from './AosEffect';
+// import { useEffect } from 'react';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 export default function ImageCards({ cardsData = [] }){
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 800, once: true });
+  // }, []);
   return (
     <section className="py-4 px-6">
+      <AosEffect/>
       <div className="flex flex-wrap justify-center">
         {cardsData.map((card, index) => (
           <div
@@ -19,7 +21,7 @@ export default function ImageCards({ cardsData = [] }){
             data-aos="fade-up"
             data-aos-delay={index * 200}
           >
-            <div className="relative z-10 bg-white py-5 px-4 sm:px-2 text-center shadow-md h-[600px]">
+            <div className="relative z-10 bg-white py-5 px-4 sm:px-2 text-center shadow-md h-[650px]">
               <Image
                 src={card.imageSrc}
                 alt={card.title}

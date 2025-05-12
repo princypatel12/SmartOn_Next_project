@@ -1,7 +1,9 @@
-'use client';
-import { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+// 'use client';
+// import { useEffect } from "react";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css'
+
+import AosEffect from "./AosEffect";
 
 const steps=[
     {
@@ -21,14 +23,15 @@ const steps=[
     },
 ];
 export default function DownloadAppSection(){
-    useEffect(()=>{
-        AOS.init({
-            duration:800,
-            once:true
-        });
-    },[]);
+    // useEffect(()=>{
+    //     AOS.init({
+    //         duration:800,
+    //         once:true
+    //     });
+    // },[]);
     return(
         <section className="relative z-10 md:py-12 px-4 md:px-8 bg-white flex justify-end">
+            <AosEffect/>
             <div className="text-start w-[450px]">
             <div className="inline-block bg-[#ED5428] text-white text-[12px] font-semibold uppercase rounded-full px-3 py-1 mb-4">
                 How it works

@@ -1,8 +1,9 @@
-"use client";
+// "use client";
 import Image from 'next/image';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AosEffect from './AosEffect';
+// import { useEffect } from 'react';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const awardsData = [
   {
@@ -40,11 +41,12 @@ const awardsData = [
 ];
 
 export default function AwardCard() {
-     useEffect(() => {
-             AOS.init({ duration: 800, once: true });
-           }, []);
+    //  useEffect(() => {
+    //          AOS.init({ duration: 800, once: true });
+    //        }, []);
   return (
     <section className="mb-10 pb-13 container mx-auto">
+      <AosEffect/>
       <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
         {awardsData.map((award, index) => (
           <li key={index} 

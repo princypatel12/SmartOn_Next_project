@@ -1,10 +1,11 @@
-'use client';
+// 'use client';
 
 import Image from 'next/image';
 import HighlightText from "./HighlightText";
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AosEffect from './AosEffect';
+// import { useEffect } from 'react';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const testimonials = [
   {
@@ -28,11 +29,12 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-    useEffect(() => {
-          AOS.init({ duration: 800, once: true });
-        }, []);
+    // useEffect(() => {
+    //       AOS.init({ duration: 800, once: true });
+    //     }, []);
   return (
     <section className="bg-white py-12 px-11">
+      <AosEffect/>
       <div className="max-w-3xl mx-auto">
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12">

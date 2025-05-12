@@ -1,8 +1,10 @@
 'use client';
 
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AosEffect from "./AosEffect";
+
+// import React, { useEffect } from 'react';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 export default function AboutSection({ title, subtitle }){
   const handleScrollDown = () => {
@@ -11,14 +13,15 @@ export default function AboutSection({ title, subtitle }){
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 800, once: true });
+  // }, []);
   return (
     <section
       className="relative bg-gradient-black-green bg-cover bg-center bg-no-repeat min-h-[86vh] flex items-center justify-center px-4 sm:px-6 lg:px-8"
       
     >
+      <AosEffect/>
       {/* <div className="absolute inset-0 bg-gradient-black-green opacity-80"></div> */}
 
       <div className="relative z-10 container mx-auto">

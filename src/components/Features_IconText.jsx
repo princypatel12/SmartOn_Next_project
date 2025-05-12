@@ -1,8 +1,9 @@
-'use client';
+// 'use client';
 import Image from 'next/image'
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AosEffect from './AosEffect';
+// import { useEffect } from 'react';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const features = [
   {
@@ -38,11 +39,12 @@ const features = [
 ];
 
 export default function Features_IconText() {
-     useEffect(() => {
-        AOS.init({ duration: 800, once: true });
-      }, []);
+    //  useEffect(() => {
+    //     AOS.init({ duration: 800, once: true });
+    //   }, []);
   return (
     <section className="background-position-center-top overflow-hidden">
+      <AosEffect/>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 sm:px-6 md:px-11"
        // data-anime='{"el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad"}'
     >

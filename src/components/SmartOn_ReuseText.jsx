@@ -1,15 +1,18 @@
-'use client';
+// 'use client';
 
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import { useEffect } from 'react';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+import AosEffect from "./AosEffect";
 
 export default function SmartOn_ReuseText({ title, description }) {
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 800, once: true });
+  // }, []);
 
   return (
+    <section>
+      <AosEffect/>
     <div className="text-center max-w-full mx-auto py-12" data-aos="fade-up">
       <span className="font-manrope text-[#ED5428] uppercase text-[17px] tracking-widest block mb-1 font-semibold">
         {title}
@@ -18,5 +21,6 @@ export default function SmartOn_ReuseText({ title, description }) {
         {description}
       </h2>
     </div>
+    </section>
   );
 }

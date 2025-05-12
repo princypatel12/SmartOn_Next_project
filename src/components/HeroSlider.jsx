@@ -2,14 +2,15 @@
 
 import Image from "next/image";
 import Link from 'next/link';
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Keyboard } from "swiper/modules";
 // import { ArrowRight } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import AosEffect from "./AosEffect";
 
 
 const slides = [
@@ -19,15 +20,16 @@ const slides = [
 ];
 
 export default function HeroSlider() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 800,
+  //     once: false,
+  //   });
+  // }, []);
   
   return (
     <section className="pt-15 relative">
+      <AosEffect/>
       <Image
         src="/images/logo/VOSAP_Logo.jpg"
         alt="VOSAP Logo"

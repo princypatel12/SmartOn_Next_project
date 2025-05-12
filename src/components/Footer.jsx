@@ -21,10 +21,18 @@ export default function Footer() {
           </Link>
           <p className="fs-17 rubik-font leading-[28px]">Experience the world with -<br />Smarton Glasses</p>
           <div className="flex space-x-4 mt-4">
-            <FaFacebookF className="w-3 h-3 cursor-pointer text-white" />
-            <FaLinkedinIn className="w-3 h-3 cursor-pointer text-white" />
-            <FaTwitter className="w-3 h-3 cursor-pointer text-white" />
-            <FaInstagram className="w-3 h-3 cursor-pointer text-white" />
+            <Link href="https://www.facebook.com/profile.php?id=61559084544097&mibextid=ZbWKwL" target="_blank">
+            <FaFacebookF className="w-3 h-3 cursor-pointer text-white"/>
+            </Link>
+            <Link href="https://www.linkedin.com/company/sunbots/" target="_blank">
+            <FaLinkedinIn className="w-3 h-3 cursor-pointer text-white"/>
+            </Link>
+            <Link href="https://twitter.com/sunbots_ai" target="_blank">
+            <FaTwitter className="w-3 h-3 cursor-pointer text-white"/>
+            </Link>
+            <Link href="https://www.instagram.com/smarton.in?igsh=ZWkyaXhoM3RwNmt3" target="_blank">
+            <FaInstagram className="w-3 h-3 cursor-pointer text-white"/>
+            </Link>
           </div>
         </div>
 
@@ -97,9 +105,9 @@ export default function Footer() {
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm space-y-4 md:flex md:justify-between md:items-center md:space-y-0">
         <p className="fs-16 rubik-font">Copyright © 2022 Sunbots Innovations</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link href="#" className="hover:text-[#ED5428] fs-16 rubik-font">Privacy policy</Link>
-          <Link href="#" className="hover:text-[#ED5428] fs-16 rubik-font">Terms of Service</Link>
-          <Link href="#" className="hover:text-[#ED5428] fs-16 rubik-font">Cancellation and Refund Policy</Link>
+          <Link href="/privacy-policy" className="hover:text-[#ED5428] fs-16 rubik-font">Privacy policy</Link>
+          <Link href="/termsofservice" className="hover:text-[#ED5428] fs-16 rubik-font">Terms of Service</Link>
+          <Link href="/cancellationrefundpolicy" className="hover:text-[#ED5428] fs-16 rubik-font">Cancellation and Refund Policy</Link>
         </div>
       </div>
     </footer>

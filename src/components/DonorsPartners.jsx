@@ -1,9 +1,10 @@
-'use client';
+// 'use client';
 
 import Image from 'next/image';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AosEffect from './AosEffect';
+// import { useEffect } from 'react';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const partners = [
   '1. VOSAP.jpg',
@@ -20,13 +21,14 @@ const partners = [
 ];
 
 export default function DonorsPartners() {
-  useEffect(() => {
-        AOS.init({ duration: 800, once: true });
-      }, []);
+  // useEffect(() => {
+  //       AOS.init({ duration: 800, once: true });
+  //     }, []);
   const firstItems = partners.slice(0, partners.length - 3);
   const lastThreeItems = partners.slice(-3);
   return (
     <section className="bg-[#1D2130] py-12 px-11">
+      <AosEffect/>
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="mb-10 text-center md:text-left">

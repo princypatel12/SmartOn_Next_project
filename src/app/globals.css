@@ -184,6 +184,18 @@ line-height:50px;
 .fs-10{
   font-size:10px;
 }
+/* privacy-policy css  */
+.privacy-heading {
+    color: #333;
+    border-left: 4px solid #ff5500;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.privacy-title {
+    color: #ff5500;
+    font-size: 32px;
+}
 /* aboutSection css */
 .bg-gradient-black-green {
   background-color: #1C1F26;
@@ -193,6 +205,10 @@ line-height:50px;
 .fs-45{
   font-size: 45.008px;
 }
+.bg-reveal {
+  animation: bgReveal 1s ease-out forwards;
+}
+
 /* missionvissionsection css  */
 .border-radius{
   border-radius:50%;
@@ -200,4 +216,17 @@ line-height:50px;
 /* addresssection css  */
 .bg-color{
   background-color: #f7f7f7;
+}
+/* addresssection css  */
+.perspective {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
 }
