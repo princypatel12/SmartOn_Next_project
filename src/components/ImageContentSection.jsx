@@ -46,7 +46,7 @@ export default function ImageContentSection({imageSrc,title,highlightText,conten
                 </div> */}
                 <div
           ref={ref}
-          className="relative w-full md:mt-16 overflow-hidden h-full md:h-[450px] rounded"
+          className="relative w-full md:mt-21 overflow-hidden h-full md:h-[450px] rounded"
         >
           {/* Animated background fill */}
           <motion.div
