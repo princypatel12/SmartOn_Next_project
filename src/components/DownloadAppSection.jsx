@@ -33,7 +33,7 @@ export default function DownloadAppSection(){
         <section className="relative z-10 md:py-12 px-4 md:px-8 bg-white flex justify-end">
             <AosEffect/>
             <div className="text-start w-[450px]">
-            <div className="inline-block bg-[#ED5428] text-white text-[12px] font-semibold uppercase rounded-full px-3 py-1 mb-4">
+            <div className="inline-block bg-[#D63E13s] text-white text-[12px] font-semibold uppercase rounded-full px-3 py-1 mb-4">
                 How it works
             </div>
             <h3 className="text-3xl rubik-font sm:text-3xl font-bold text-gray-800 mb-10 ">
@@ -58,9 +58,9 @@ export default function DownloadAppSection(){
                     </div>
                     {/* content  */}
                     <div className="text-left rubik-font">
-                        <h6 className="fs-18 font-bold text-black-900 mb-1">
+                        <h4 className="fs-18 font-bold text-black-900 mb-1">
                             {step.title}
-                        </h6>
+                        </h4>
                         <p className="fs-17 text-black-600 max-w-md">
                             {step.description}
                         </p>

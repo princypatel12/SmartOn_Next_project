@@ -1,8 +1,9 @@
 // 'use client';
 
-import  Link  from "next/link";
+// import  Link  from "next/link";
 import AosEffect from "./AosEffect";
 import { FiMapPin, FiHeadphones, FiMail } from "react-icons/fi";
+import Button from './Button';
 
 
 // import React from 'react';
@@ -65,12 +66,16 @@ export default function AddressSection(){
                 className="absolute inset-0 bg-cover bg-center rounded flex items-center justify-center text-center rotate-y-180 backface-hidden"
               >
                 <div className="bg-black/20 w-full h-full rounded flex items-center justify-center">
-                  <Link
+                  {/* <Link
                     href={card.buttonLink}
                     className="px-5 py-2 bg-[#ED5428] text-white rounded text-sm font-semibold"
                   >
                     {card.buttonText}
-                  </Link>
+                  </Link> */}
+                  <Button href={card.buttonLink}>
+                  {card.buttonText}
+                  </Button>
+
                 </div>
               </div>
             </div>

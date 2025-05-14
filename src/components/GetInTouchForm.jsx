@@ -1,6 +1,9 @@
 'use client';
 import HighlightText from './HighlightText';
 import {useState} from 'react';
+import Button from './Button';
+// import Link from 'next/link';
+
 export default function GetInTouchForm({title,highlightText}){
     const[formData,setFormData]=useState({
         name:'',
@@ -52,13 +55,17 @@ export default function GetInTouchForm({title,highlightText}){
             We are committed to protecting your privacy. We will never collect
             information about you without your explicit consent.
             </div>
-            <div className="md:col-span-1 text-center md:text-right">
-            <button
+            <div className="md:col-span-1 justify-center flex md:justify-end">
+            {/* <button
               type="submit"
-              className="px-5 py-3 rounded bg-[#ED5428] text-[15px] text-white font-semibold shadow-md hover:shadow-lg transition"
+              className="px-5 py-3 rounded bg-[#D63E13] text-[16px] text-white shadow-md hover:shadow-lg transition"
             >
               Send message
-            </button>
+            </button> */}
+            <Button href="/" ariaLabel="Go to home page">
+  Send message
+</Button>
+            
           </div>
           
             {submitted && (

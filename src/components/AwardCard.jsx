@@ -58,7 +58,7 @@ export default function AwardCard() {
               <div className="relative bg-[#252B48] transform transition duration-300 group-hover:scale-105">
                 <Image
                   src={award.imageSrc}
-                  alt={award.title}
+                  alt="award related info image"
                   width={400}
                   height={300}
                   className="w-full h-full object-cover overflow-hidden"

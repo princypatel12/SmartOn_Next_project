@@ -55,7 +55,7 @@ export default function MissionVisionSlider({ image1, image2 }) {
           >
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
-                <div className="mb-2 font-semibold text-[#ED5428] fs-17 uppercase tracking-wide">
+                <div className="mb-2 font-semibold text-[#D63E13] fs-17 uppercase tracking-wide">
                 {slide.lable}
                 </div>
                 <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-3  w-full md:w-[500px]">{slide.heading}</h3>

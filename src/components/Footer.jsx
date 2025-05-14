@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Button from './Button';
 
 export default function Footer() {
   return (
@@ -21,16 +22,16 @@ export default function Footer() {
           </Link>
           <p className="fs-17 rubik-font leading-[28px]">Experience the world with -<br />Smarton Glasses</p>
           <div className="flex space-x-4 mt-4">
-            <Link href="https://www.facebook.com/profile.php?id=61559084544097&mibextid=ZbWKwL" target="_blank">
+            <Link href="https://www.facebook.com/profile.php?id=61559084544097&mibextid=ZbWKwL" aria-label="Facebook link" target="_blank">
             <FaFacebookF className="w-3 h-3 cursor-pointer text-white"/>
             </Link>
-            <Link href="https://www.linkedin.com/company/sunbots/" target="_blank">
+            <Link href="https://www.linkedin.com/company/sunbots/" aria-label="Linkedin link" target="_blank">
             <FaLinkedinIn className="w-3 h-3 cursor-pointer text-white"/>
             </Link>
-            <Link href="https://twitter.com/sunbots_ai" target="_blank">
+            <Link href="https://twitter.com/sunbots_ai" aria-label="Twitter link" target="_blank">
             <FaTwitter className="w-3 h-3 cursor-pointer text-white"/>
             </Link>
-            <Link href="https://www.instagram.com/smarton.in?igsh=ZWkyaXhoM3RwNmt3" target="_blank">
+            <Link href="https://www.instagram.com/smarton.in?igsh=ZWkyaXhoM3RwNmt3" aria-label="Instagram link" target="_blank">
             <FaInstagram className="w-3 h-3 cursor-pointer text-white"/>
             </Link>
           </div>
@@ -40,18 +41,43 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-semibold mb-4 fs-17">Company</h4>
           <ul className="space-y-2 fs-17 rubik-font leading-[28px]">
-            <li className="hover:text-[#ED5428] cursor-pointer">Who we are</li>
-            <Link href="https://play.google.com/store/apps/details?id=com.smarton.sunbots&pcampaignid=web_share">
-            <li className="flex items-center gap-2 hover:text-[#ED5428] cursor-pointer mb-2">
-              Smarton App
-              <span className="bg-gray-700 text-white text-xs px-2 py-0.5 rounded-full fs-10">HOT</span>
-               </li>
-               </Link>
-               <Link href="/partnerwithsmarton">
-            <li className="hover:text-[#ED5428] cursor-pointer mb-2">Partner with Us</li></Link>
-            <Link href="/">
-            <li className="hover:text-[#ED5428] cursor-pointer">Smarton</li></Link>
-          </ul>
+              <li>
+                <Link
+                  href="/about-us"
+                  className="hover:text-[#ED5428] cursor-pointer"
+                >
+                  Who we are
+                </Link>
+              </li>
+            
+              <li className="mb-2">
+                <Link
+                  href="https://play.google.com/store/apps/details?id=com.smarton.sunbots&pcampaignid=web_share"
+                  className="flex items-center gap-2 hover:text-[#ED5428] cursor-pointer"
+                >
+                  Smarton App
+                  <span className="bg-gray-700 text-white text-xs px-2 py-0.5 rounded-full fs-10">
+                    HOT
+                  </span>
+                </Link>
+              </li>
+            
+              <li className="mb-2">
+                <Link
+                  href="/partnerwithsmarton"
+                  className="hover:text-[#ED5428] cursor-pointer"
+                >
+                  Partner with Us
+                </Link>
+              </li>
+            
+              <li>
+                <Link href="/" className="hover:text-[#ED5428] cursor-pointer">
+                  Smarton
+                </Link>
+              </li>
+           </ul>
+
         </div>
 
         {/* Go To */}
@@ -97,11 +123,18 @@ export default function Footer() {
            </svg>
 
           </div>
-          <Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">
-            <button className="bg-[#ED5428] cursor-pointer text-white text-[16px] flex items-center px-3 py-1.5 leading-6 [letter-spacing:0.5px] rounded shadow transition">
+          {/* <Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">
+            <button className="bg-[#D63E13] cursor-pointer text-white text-[16px] flex items-center px-3 py-1.5 leading-6 [letter-spacing:0.5px] rounded shadow transition">
               Book a Demo Now
             </button>
-          </Link>
+          </Link> */}
+          <Button
+            href="https://calendly.com/faiz-sunbots/30min"
+            ariaLabel="Book a Demo"
+            target="_blank"
+          >
+           Book a Demo Now
+          </Button>
         </div>
       </div>
 

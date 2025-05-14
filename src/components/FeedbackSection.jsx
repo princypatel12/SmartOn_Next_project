@@ -48,6 +48,7 @@ export default function FeedbackSection() {
                 <iframe
                   src={item.videoUrl}
                   className="w-full h-[350px]"
+                  title="feedback youtube video"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>

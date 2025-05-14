@@ -3,15 +3,15 @@ import Image from "next/image";
 export default function AsSeenOn() {
   const asSeenLogo = [
     {
-      src:"/images/AsSeenOn-image/TED-ximg.png",
+      src:"/images/AsSeenOn-Image/TED-ximg.png",
       alt:"TEDx",
     },
     {
-      src:"/images/AsSeenOn-image/emerge50-logo.jpg",
+      src:"/images/AsSeenOn-Image/emerge50-logo.jpg",
       alt:"Nasscom",
     },
     {
-      src:"/images/AsSeenOn-image/NDTV.avif",
+      src:"/images/AsSeenOn-Image/NDTV.avif",
       alt:"NDTV",
     },
   ];

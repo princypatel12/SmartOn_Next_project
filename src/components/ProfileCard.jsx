@@ -12,7 +12,7 @@ export default function ProfileCard({ name, role, image, linkedin, index }) {
       <div className="overflow-hidden shadow-md bg-white group transition-all duration-300">
         <Image
           src={image}
-          alt={name}
+          alt="name of the team member"
           width={300}
           height={300}
           className="w-full h-full md:h-[300px] object-cover"
@@ -28,6 +28,7 @@ export default function ProfileCard({ name, role, image, linkedin, index }) {
                 href={linkedin}
                 target="_blank"
                 className="inline-block text-black-600 hover:text-black-800"
+                aria-label="linkedin icon"
               >
                 <FaLinkedin size={20} />
               </Link>

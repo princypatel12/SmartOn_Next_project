@@ -53,6 +53,7 @@ export default function AboutSection({ title, subtitle }){
             <button
               onClick={handleScrollDown}
               className="text-white"
+              aria-label="down arrow button"
             >
                <div className="flex flex-col items-center mt-2">
             {/* Line */}
