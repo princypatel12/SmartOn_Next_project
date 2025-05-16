@@ -1,15 +1,10 @@
-// 'use client';
+// contact us page 
+// 3.addresssection component
 
-// import  Link  from "next/link";
 import AosEffect from "./AosEffect";
 import { FiMapPin, FiHeadphones, FiMail } from "react-icons/fi";
 import Button from './Button';
 
-
-// import React from 'react';
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
 export default function AddressSection(){
     const addressData=[
         {
@@ -36,9 +31,7 @@ export default function AddressSection(){
         <FiHeadphones className="text-[#ED5428] text-4xl mb-4" />,
         <FiMail className="text-[#ED5428] text-3xl mb-4" />,
     ];
-    // useEffect(() => {
-    //       AOS.init({ duration: 800, once: true });
-    //     }, []);
+
     return (
     <section
       id="down-section"
@@ -66,12 +59,6 @@ export default function AddressSection(){
                 className="absolute inset-0 bg-cover bg-center rounded flex items-center justify-center text-center rotate-y-180 backface-hidden"
               >
                 <div className="bg-black/20 w-full h-full rounded flex items-center justify-center">
-                  {/* <Link
-                    href={card.buttonLink}
-                    className="px-5 py-2 bg-[#ED5428] text-white rounded text-sm font-semibold"
-                  >
-                    {card.buttonText}
-                  </Link> */}
                   <Button href={card.buttonLink}>
                   {card.buttonText}
                   </Button>

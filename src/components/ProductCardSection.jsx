@@ -1,3 +1,5 @@
+// product page 
+// 3. ProductCardSection.jsx
 import ImageCards from '@/components/ImageCards';
 
 const productCardData = [

@@ -1,11 +1,5 @@
-// 'use client';
-
-import AosEffect from "./AosEffect";
-
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-
+// 9. FeedbackSection.jsx -->this is imported in CombinedComponent.jsx
+import AosEffect from "./AosEffect";//this is the animation effect component
 const feedbackData = [
   {
     name: 'Aditi Pandya',
@@ -26,9 +20,6 @@ const feedbackData = [
 ];
 
 export default function FeedbackSection() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 800, once: true });
-  // }, []);
   return (
       <div className="max-w-7xl mx-auto pt-7 pb-3 px-4 mb-10">
         <AosEffect/>
@@ -41,11 +32,14 @@ export default function FeedbackSection() {
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
+              {/* feedback person name  */}
               <p className="mb-4 font-24 rubik-font bold-text text-center">
                 SMARTON Feedback by {item.name}
               </p>
               <div className="aspect-ratio overflow-hidden rounded-lg">
+                {/* feedback video  */}
                 <iframe
+                  loading="lazy"
                   src={item.videoUrl}
                   className="w-full h-[350px]"
                   title="feedback youtube video"

@@ -1,3 +1,4 @@
+//1. Header component 
 'use client';
 
 import { useState } from 'react';
@@ -24,6 +25,7 @@ export default function Header() {
             width={90}
             height={90}
             className="w-[90px]"
+            priority
           />
         </Link>
 
@@ -35,18 +37,13 @@ export default function Header() {
           {isOpen ? <X size={24} className="text-[#D63E13] cursor-pointer"/> : <Menu size={24} className="text-[#D63E13] cursor-pointer" />}
         </button>
 
+        {/* desktop links  */}
         <nav className="hidden md:flex space-x-8 text-[17px] items-center">
           <Link href="/" className={`hover:text-gray-300 transition ${isActive('/')}`}>Home</Link>
           <Link href="/about-us" className={`hover:text-gray-300 transition ${isActive('/about-us')}`}>About Us</Link>
           <Link href="/product" className={`hover:text-gray-300 transition ${isActive('/product')}`}>Product</Link>
           <Link href="/partnerwithsmarton" className={`hover:text-gray-300 transition ${isActive('/partnerwithsmarton')}`}>Partner with Smarton</Link>
           <Link href="/contact-us" className={`hover:text-gray-300 transition ${isActive('/contact-us')}`}>Contact Us</Link>
-          
-          {/* <Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">
-            <button className="bg-[#D63E13] cursor-pointer text-white text-[16px] flex items-center px-3 py-1.5 leading-6 [letter-spacing:0.5px] rounded shadow transition">
-              Book a Demo Now
-            </button>
-            </Link> */}
            <Button
             href="https://calendly.com/faiz-sunbots/30min"
             ariaLabel="Book a Demo"
@@ -54,10 +51,10 @@ export default function Header() {
            >
              Book a Demo Now
            </Button>
-
         </nav>
       </div>
 
+      {/* Mobile Menu links*/}
       {isOpen && (
         <div className="md:hidden px-6 text-[17px] tracking-[1px] py-4 space-y-4 text-sm bg-white text-black">
           <Link href="/" onClick={() => setIsOpen(false)} className="block hover:text-gray-300">Home</Link>
@@ -66,17 +63,11 @@ export default function Header() {
           <Link href="/partnerwithsmarton" onClick={() => setIsOpen(false)} className="block hover:text-gray-300">Partner with Smarton</Link>
           <Link href="/contact-us" onClick={() => setIsOpen(false)} className="block hover:text-gray-300">Contact Us</Link>
           
-           {/* <Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">
-            <button className="bg-[#D63E13] text-white text-[14px] px-4 py-2 rounded shadow transition">
-              Book a Demo Now
-            </button>
-            </Link> */}
-            {/* <Button><Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">Book a Demo Now</Link></Button> */}
           <Button
             href="https://calendly.com/faiz-sunbots/30min"
             ariaLabel="Book a Demo"
             target="_blank"
->          
+           >          
             Book a Demo Now
           </Button>
 

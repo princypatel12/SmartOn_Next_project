@@ -1,10 +1,6 @@
-// 'use client';
-
+// 14. LatestBlogs.jsx 
 import React from 'react';
-import AosEffect from './AosEffect';
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import AosEffect from './AosEffect';//this is the animation effect component
 
 const blogs = [
   {
@@ -22,14 +18,12 @@ const blogs = [
 ];
 
 export default function LatestBlogs(){
-  // useEffect(() => {
-  //     AOS.init({ duration: 800, once: true });
-  //   }, []);
   return (
     <section className="py-16 px-11 bg-white">
       <AosEffect/>
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12">Latest Blogs</h2>
+        {/* heading  */}
+        <h3 className="text-4xl font-bold text-gray-900 mb-12">Latest Blogs</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogs.map((blog, index) => (
             <div

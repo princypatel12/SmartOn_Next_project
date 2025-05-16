@@ -1,3 +1,4 @@
+// footer cancellationrefundpolicy link component page.jsx 
 import CancellationRefundPolicy from "@/components/CancellationRefundPolicy";
 
 export default function CancellationRefundPolicyPage(){
@@ -5,5 +6,5 @@ export default function CancellationRefundPolicyPage(){
         <main className="pt-15">
             <CancellationRefundPolicy/>
         </main>
-    )
+    );
 }

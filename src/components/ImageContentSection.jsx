@@ -1,3 +1,5 @@
+//about-us page component 
+// 3.Imagecontent component 
 "use client";   
 import React from 'react';
 import Image from 'next/image';
@@ -33,21 +35,10 @@ export default function ImageContentSection({imageSrc,title,highlightText,conten
         <section id="down-section" className="md:py-16 py-6">
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
                 {/* left image section  */}
-                {/* <div className="relative w-full md:mt-16">
-        
-                <Image 
-                 src={imageSrc}
-                 alt="Frame 1 image"
-                 width={800}
-                 height={500}
-                 className="w-full rounded"
-                />
-                
-                </div> */}
                 <div
-          ref={ref}
-          className="relative w-full md:mt-21 overflow-hidden h-full md:h-[450px] rounded"
-        >
+                ref={ref}
+                className="relative w-full md:mt-21 overflow-hidden h-full md:h-[450px] rounded"
+                >
           {/* Animated background fill */}
           <motion.div
             className="absolute inset-0 bg-[#010048] z-0 rounded"

@@ -1,15 +1,7 @@
-// 'use client';
-
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-import AosEffect from "./AosEffect";
+// 4.SmartOn_ReuseText.jsx 
+import AosEffect from "./AosEffect";//this is the animation effect component
 
 export default function SmartOn_ReuseText({ title, description }) {
-  // useEffect(() => {
-  //   AOS.init({ duration: 800, once: true });
-  // }, []);
-
   return (
     <section>
       <AosEffect/>

@@ -1,3 +1,5 @@
+// contact-us page 
+// 5.locationampsection component 
 export default function LocationMapSection() {
     return (
       <section id="location" className="py-10">

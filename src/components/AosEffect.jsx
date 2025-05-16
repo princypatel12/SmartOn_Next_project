@@ -1,3 +1,4 @@
+// this component is used to initialize AOS (Animate On Scroll) library for all the page where this animation is needed.
 'use client';
 import { useEffect } from 'react';
 import AOS from 'aos';

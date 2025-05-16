@@ -1,3 +1,4 @@
+// 3. AsSeenOn component 
 import Image from "next/image";
 
 export default function AsSeenOn() {

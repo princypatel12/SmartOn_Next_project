@@ -1,3 +1,5 @@
+// product page 
+// 5.DownloadImageContent.jsx
 "use client";
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -26,9 +28,6 @@ export default function DownloadImageContent() {
   const Image1 = useTransform(scrollYProgress, [0, 1], [0, -250]);//bottom of the scroll image move up to -250
   const Image2 = useTransform(scrollYProgress, [0, 1], [0, 250]);//move down to the 250 
 
- 
-  const MotionDiv = isApply ? motion.div : 'div';
-
   return (
     <section ref={containerRef} className="bg-gray-100 py-9 relative z-0">
       <div className="container mx-auto px-4">
@@ -37,7 +36,10 @@ export default function DownloadImageContent() {
           {/* Left images */}
           <div className="grid grid-cols-2 gap-4 px-4 md:px-0">
             {/* automatically handle trnsform:translateY in this prop y: image1 */}
-            <MotionDiv style={isApply ? { y: Image1 } : {}} className="relative z-0">
+            <motion.div
+              style={isApply ? { y: Image1 } : {}}
+              className="relative z-0"
+            >
               <Image 
                 src="/images/productimg/image1.png"
                 alt="downloadappimage1"
@@ -45,8 +47,11 @@ export default function DownloadImageContent() {
                 height={300}
                 className="rounded-lg w-full h-auto"
               />
-            </MotionDiv>
-            <MotionDiv style={isApply ? { y: Image2 } : {}} className="relative z-0">
+            </motion.div>
+            <motion.div
+              style={isApply ? { y: Image2 } : {}}
+              className="relative z-0"
+            >
               <Image
                 src="/images/productimg/image2.png"
                 alt="downloadappimage2"
@@ -54,7 +59,8 @@ export default function DownloadImageContent() {
                 height={300}
                 className="rounded-lg w-full h-auto"
               />
-            </MotionDiv>
+            </motion.div>
+
           </div>
 
           {/* Right content */}

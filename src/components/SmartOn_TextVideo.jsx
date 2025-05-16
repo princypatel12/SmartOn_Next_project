@@ -1,3 +1,4 @@
+// 6. SmartOn_TextVideo.jsx --> this is the component for the video and text section 
 'use client';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
@@ -20,7 +21,6 @@ export default function SmartOn_TextVideo() {
       transition={{ duration: 0.6, ease: 'easeInOut' }}
       className="relative overflow-hidden bg-[#FFF1ED]"
   >
-    {/* <section className="relative overflow-hidden bg-[#FFF1ED]"> */}
         <div className="max-w-full mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 p-6 items-center gap-12 my-4">
             {/* Left Content */}
@@ -36,6 +36,7 @@ export default function SmartOn_TextVideo() {
                 Experience the world <br />with -{' '}
                 <span className="smarton-typewrite smarton-commontext" >
                 
+                 {/* typewriter effect  */}
                     <Typewriter options={{
                     strings: ['Smarton.'],
                     autoStart: true,
@@ -46,6 +47,7 @@ export default function SmartOn_TextVideo() {
                 </span>
               </h3>
 
+              {/* buy now button link  */}
               <div className="flex flex-col sm:flex-row gap-1 mt-4">
                 <Link
                   href="https://www.amazon.in/dp/B0F1CXQKB4"
@@ -53,6 +55,8 @@ export default function SmartOn_TextVideo() {
                 >
                   Buy Now @ ₹14,999
                 </Link>
+
+                {/* download link  */}
                 <Link
                   href="https://play.google.com/store/apps/details?id=com.smarton.sunbots"
                   className="btn-gradient-pink-orange text-white text-[16px] px-6 py-3 rounded shadow-md text-center sm:w-auto"
@@ -74,7 +78,6 @@ export default function SmartOn_TextVideo() {
             </div>
           </div>
         </div>
-    {/* </section> */}
     </motion.section>
   );
 }

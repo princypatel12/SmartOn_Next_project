@@ -1,3 +1,4 @@
+// 5.HomeCardSection.jsx -->here import imagecards component and create a data array for the cards
 import ImageCards from '@/components/ImageCards';
 
 const homeCardData = [

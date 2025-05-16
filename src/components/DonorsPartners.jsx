@@ -1,11 +1,6 @@
-// 'use client';
-
+// 11.DonorsPartners.jsx 
 import Image from 'next/image';
-import AosEffect from './AosEffect';
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-
+import AosEffect from './AosEffect';//this is the animation effect component
 const partners = [
   '1. VOSAP.jpg',
   '2. Informatica.png',
@@ -21,9 +16,6 @@ const partners = [
 ];
 
 export default function DonorsPartners() {
-  // useEffect(() => {
-  //       AOS.init({ duration: 800, once: true });
-  //     }, []);
   const firstItems = partners.slice(0, partners.length - 3);
   const lastThreeItems = partners.slice(-3);
   return (
@@ -42,7 +34,7 @@ export default function DonorsPartners() {
         
         </div>
 
-      
+        {/* first 8 images for align center  */}
         <div className="flex flex-wrap gap-6 mb-6 justify-center">
           {firstItems.map((fileName, index) => (
             <div

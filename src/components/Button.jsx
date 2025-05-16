@@ -1,6 +1,8 @@
+// button component for the common button styling 
 'use client';
 
 import Link from 'next/link';
+
 
 export default function Button({
   href,

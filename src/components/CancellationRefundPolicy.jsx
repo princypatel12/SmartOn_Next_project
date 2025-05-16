@@ -1,5 +1,6 @@
+// this is the cancellation refund policy page 
 import Link from 'next/link';
-import FooterPolicyReuseSection from './FooterPolicyReuseSection';
+import FooterPolicyReuseSection from './FooterPolicyReuseSection';//this is for all the footer privacypolicy section comman component
 
 export default function CancellationRefundPolicy(){
     return(
@@ -30,7 +31,7 @@ export default function CancellationRefundPolicy(){
 
       <FooterPolicyReuseSection title="Return Policy">
         <p className="mb-4">Customers have 30 days from the date of delivery to return the Smarton glasses for any reason.</p>
-        <p classname="space-y-3"><strong>To be eligible for a return:</strong> the product must be in the same condition that you received it, unworn or unused, with tags, and in its original packaging. You’ll also need the receipt or proof of purchase.</p>
+        <p className="space-y-3"><strong>To be eligible for a return:</strong> the product must be in the same condition that you received it, unworn or unused, with tags, and in its original packaging. You’ll also need the receipt or proof of purchase.</p>
         <p><strong>Customers are responsible for the return shipping costs: </strong>unless the return is due to a defect or incorrect product received.</p>
       </FooterPolicyReuseSection>
 
@@ -51,7 +52,7 @@ export default function CancellationRefundPolicy(){
       </FooterPolicyReuseSection>
 
       <FooterPolicyReuseSection title="Contact Us">
-        <p lassName="mb-4">For more information about our cancellation and refund policy, if you have questions, or if you would like to make a complaint, please contact us by email at<Link href="mailto:support@sunbots.in" className="text-[#ff5500] font-bold hover:underline">support@sunbots.in</Link>.</p>
+        <p className="mb-4">For more information about our cancellation and refund policy, if you have questions, or if you would like to make a complaint, please contact us by email at<Link href="mailto:support@sunbots.in" className="text-[#D63E13] font-bold hover:underline">support@sunbots.in</Link>.</p>
       </FooterPolicyReuseSection>
     </section>
     )

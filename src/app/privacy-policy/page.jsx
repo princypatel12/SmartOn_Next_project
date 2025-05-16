@@ -1,3 +1,4 @@
+// footer privacy policy link component page.jsx
 import PrivacyPolicy from "@/components/PrivacyPolicy";
 
 export default function PrivacyPolicyPage(){
@@ -5,5 +6,5 @@ export default function PrivacyPolicyPage(){
         <main className="pt-15">
             <PrivacyPolicy/>
         </main>
-    )
+    );
 }

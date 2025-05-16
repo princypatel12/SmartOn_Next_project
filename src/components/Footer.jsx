@@ -1,3 +1,4 @@
+// 15.Footer.jsx 
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -39,7 +40,7 @@ export default function Footer() {
 
         {/* Company */}
         <div>
-          <h4 className="text-white font-semibold mb-4 fs-17">Company</h4>
+          <h2 className="text-white font-semibold mb-4 fs-17">Company</h2>
           <ul className="space-y-2 fs-17 rubik-font leading-[28px]">
               <li>
                 <Link
@@ -82,7 +83,7 @@ export default function Footer() {
 
         {/* Go To */}
         <div>
-          <h4 className="text-white font-semibold mb-4 fs-17">Go To</h4>
+          <h2 className="text-white font-semibold mb-4 fs-17">Go To</h2>
           <ul className="space-y-2 fs-17 rubik-font leading-[28px]">
             <li className="hover:text-[#ED5428] cursor-pointer"><Link href="/">Home</Link></li>
             <li className="hover:text-[#ED5428] cursor-pointer"><Link href="/product">Product</Link></li>
@@ -94,7 +95,7 @@ export default function Footer() {
 
         {/* Need Help */}
         <div>
-          <h4 className="text-white font-semibold mb-4 fs-17">Need help?</h4>
+          <h2 className="text-white font-semibold mb-4 fs-17">Need help?</h2>
           <p className="fs-17 rubik-font leading-[28px]">Call us</p>
           <p className="text-white mb-4 fs-17 rubik-font leading-[28px]">(+91) 9104156317</p>
           <p className="fs-17 rubik-font leading-[28px]">Email us</p>
@@ -103,13 +104,14 @@ export default function Footer() {
 
         {/* Newsletter */}
         <div className="space-y-4">
-          <h4 className="text-white font-semibold fs-17">Subscribe our newsletter</h4>
+          <h2 className="text-white font-semibold fs-17">Subscribe our newsletter</h2>
           <div className="flex items-center bg-gray-800 p-2 rounded-md">
             <input
               type="email"
               placeholder="Enter your email"
               className="bg-transparent outline-none fs-14 flex-grow text-white"
             />
+            {/* email svg icon  */}
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-5 h-5 text-white"
@@ -123,11 +125,7 @@ export default function Footer() {
            </svg>
 
           </div>
-          {/* <Link href="https://calendly.com/faiz-sunbots/30min" target="_blank">
-            <button className="bg-[#D63E13] cursor-pointer text-white text-[16px] flex items-center px-3 py-1.5 leading-6 [letter-spacing:0.5px] rounded shadow transition">
-              Book a Demo Now
-            </button>
-          </Link> */}
+          {/* Book a demo button  */}
           <Button
             href="https://calendly.com/faiz-sunbots/30min"
             ariaLabel="Book a Demo"
@@ -138,7 +136,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Line */}
+      {/* Bottom Line and content */}
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm space-y-4 md:flex md:justify-between md:items-center md:space-y-0">
         <p className="fs-16 rubik-font">Copyright © 2022 Sunbots Innovations</p>
         <div className="flex flex-wrap justify-center gap-4">

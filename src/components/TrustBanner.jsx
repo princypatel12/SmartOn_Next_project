@@ -1,15 +1,7 @@
-// 'use client';
+// 9.TrustBanner.jsx -->this is imported in CombinedComponent.jsx
+import AosEffect from "./AosEffect";//this is the animation effect component
 
-import AosEffect from "./AosEffect";
-
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
 export default function TrustBanner() {
-    //  useEffect(() => {
-    //     AOS.init({ duration: 800, once: true });
-    //   }, []);
-
     return (
       <section>
         <AosEffect/>

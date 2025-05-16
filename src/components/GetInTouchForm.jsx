@@ -1,3 +1,8 @@
+// partnerwithsmarton page and contact us page 
+// partnerwithsmarton page 
+// 3.getintouch.jsx
+// contactus page 
+// 4.getintouch.jsx
 'use client';
 import HighlightText from './HighlightText';
 import {useState} from 'react';
@@ -38,6 +43,7 @@ export default function GetInTouchForm({title,highlightText}){
         </div>
         <div className="w-full flex justify-center">
             <div className="w-full max-w-3xl">
+              {/* form section  */}
                 <form action=""  onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 rubik-font fs-16">
                     <input className="form-input border border-sm rounded p-3" type="text" name="name"placeholder="Your name*" value={formData.name} onChange={handleChange} required/>
                     <input className="form-input border border-sm rounded p-3" type="email" name="email" placeholder="Your email address*" value={formData.email} onChange={handleChange} required/>
@@ -63,8 +69,8 @@ export default function GetInTouchForm({title,highlightText}){
               Send message
             </button> */}
             <Button href="/" ariaLabel="Go to home page">
-  Send message
-</Button>
+             Send message
+            </Button>
             
           </div>
           
@@ -74,13 +80,8 @@ export default function GetInTouchForm({title,highlightText}){
             </div>
           )}
           </form>
-                
-            </div>
         </div>
-
-        
+        </div>
         </section>
-
-      
-    );
+        );
 }

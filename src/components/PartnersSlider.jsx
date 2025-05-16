@@ -1,5 +1,5 @@
+// 12.PartnersSlider.jsx 
 'use client';
-
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';

@@ -1,8 +1,5 @@
-// 'use client';
-// import { useEffect } from "react";
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'
-
+//product page 
+// 4.DownloadAppSection component
 import AosEffect from "./AosEffect";
 
 const steps=[
@@ -23,12 +20,6 @@ const steps=[
     },
 ];
 export default function DownloadAppSection(){
-    // useEffect(()=>{
-    //     AOS.init({
-    //         duration:800,
-    //         once:true
-    //     });
-    // },[]);
     return(
         <section className="relative z-10 md:py-12 px-4 md:px-8 bg-white flex justify-end">
             <AosEffect/>

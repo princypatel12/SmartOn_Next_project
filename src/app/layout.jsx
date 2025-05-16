@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* header and footer component for all pages  */}
         <Header/>
         {children}
         <Footer/>

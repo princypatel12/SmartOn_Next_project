@@ -1,3 +1,4 @@
+// 5 and 6.profilecard component -->this is the common profilecard component for teammembercards.jsx and advisorsmentors.jsx
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaLinkedin } from 'react-icons/fa';

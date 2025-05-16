@@ -1,10 +1,6 @@
-// "use client";
+// 10.AwardCard.jsx 
 import Image from 'next/image';
-import AosEffect from './AosEffect';
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-
+import AosEffect from './AosEffect';//this is the animation effect component
 const awardsData = [
   {
     imageSrc: '/images/Award-Img/1. LV Prasad.jpg',
@@ -41,9 +37,6 @@ const awardsData = [
 ];
 
 export default function AwardCard() {
-    //  useEffect(() => {
-    //          AOS.init({ duration: 800, once: true });
-    //        }, []);
   return (
     <section className="mb-10 pb-13 container mx-auto">
       <AosEffect/>
@@ -54,6 +47,7 @@ export default function AwardCard() {
           data-aos="fade-up"
           data-aos-delay={index * 100}
           >
+            {/* wrap media content with figure tag  */}
             <figure className="group relative w-full overflow-hidden shadow-lg">
               <div className="relative bg-[#252B48] transform transition duration-300 group-hover:scale-105">
                 <Image
@@ -65,6 +59,7 @@ export default function AwardCard() {
                 />
                 <div className="absolute inset-0 group-hover:bg-black/50 transition duration-300" />
               </div>
+              {/* for the caption or the description use figcaption  */}
               <figcaption className="absolute inset-0 flex items-end p-4 sm:p-6">
                 <p className="text-white rubik-font fs-22 rubik-font font-semibold leading-snug">
                   {award.title}

@@ -1,8 +1,4 @@
-// 'use client';
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-
+// 6.advisorsmentors component -->here import the common profilecard component for the common style
 import AosEffect from './AosEffect';
 import HighlightText from './HighlightText';
 import ProfileCard from './ProfileCard';
@@ -30,10 +26,6 @@ const supporters=[
 ];
 
 export default function AdvisorsMentors({ title, highlightText }) {
-  // useEffect(() => {
-  //   AOS.init({ duration: 800, once: true });
-  // }, []);
-
   return (
     <section className="py-12 px-4 max-w-3xl mx-auto">
       <AosEffect/>
@@ -46,7 +38,7 @@ export default function AdvisorsMentors({ title, highlightText }) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:px-6 md:px-0 max-w-6xl mx-auto">
         {supporters.map((supporter, index) => (
-          <ProfileCard key={index} {...supporter} index={index} />
+          <ProfileCard key={index} {...supporter} index={index} />//here use spread operator
         ))}
       </div>
     </section>

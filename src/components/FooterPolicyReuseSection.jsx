@@ -1,3 +1,4 @@
+// this is for all policy reuse section 
 import React from 'react';
 //children is reserved prop 
 export default function FooterPolicyReuseSection({ title, children }){

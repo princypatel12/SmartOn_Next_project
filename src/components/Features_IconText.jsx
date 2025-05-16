@@ -1,9 +1,6 @@
-// 'use client';
+// 8. Features_IconText.jsx 
 import Image from 'next/image'
-import AosEffect from './AosEffect';
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import AosEffect from './AosEffect';//this is the animation effect component
 
 const features = [
   {
@@ -39,15 +36,10 @@ const features = [
 ];
 
 export default function Features_IconText() {
-    //  useEffect(() => {
-    //     AOS.init({ duration: 800, once: true });
-    //   }, []);
   return (
     <section className="background-position-center-top overflow-hidden">
       <AosEffect/>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 sm:px-6 md:px-11"
-       // data-anime='{"el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad"}'
-    >
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 sm:px-6 md:px-11"    >
       {features.map((feature, index) => (
         <div
           key={index}
@@ -57,10 +49,18 @@ export default function Features_IconText() {
         >
           <div className="px-5 flex flex-col items-center text-center">
             <div className="mb-1">
-              <Image src={feature.icon} alt={feature.title} width={50} height={50} />
+              {/* feature icon  */}
+              <Image 
+              src={feature.icon} 
+              alt="Feature icon and content" 
+              width={50} 
+              height={50} />
+
             </div>
+            {/* feature title  */}
             <p className="inline-block font-bold mb-[5px] text-[18px] text-[#ed5328]
             ">{feature.title}</p>
+            {/* feature description  */}
             <p className="text-black-700 fs-17 sm:text-base leading-relaxed rubik-font">{feature.description}</p>
 
           </div>
@@ -68,7 +68,7 @@ export default function Features_IconText() {
       ))}
     </div>
     </section>
-  )
+  );
 }
 
 

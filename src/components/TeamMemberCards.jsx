@@ -1,8 +1,4 @@
-// 'use client';
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-
+// 5.Teammembercards component -->here import the common profilecard component for the common style
 import AosEffect from './AosEffect';
 import HighlightText from './HighlightText';
 import ProfileCard from './ProfileCard';
@@ -53,9 +49,6 @@ const teamMembers = [
 ];
 
 export default function TeamMemberCards({ title, highlightText }) {
-  // useEffect(() => {
-  //   AOS.init({ duration: 800, once: true });
-  // }, []);
   return (
     <section className="md:py-12 py-0 px-4 max-w-3xl mx-auto">
       <AosEffect/>

@@ -1,3 +1,5 @@
+// about-us page component 
+// 4.MissionVisionSlider component 
 "use client";
 import React, { useRef } from 'react';//stores mutable value 
 import Image from 'next/image';
@@ -32,8 +34,6 @@ export default function MissionVisionSlider({ image1, image2 }) {
     target: containerRef,
     offset: ['start end', 'end start'],//top of the element and bottom of the element
   });
-
-  // const x = useTransform(scrollYProgress, [0, 1], [100, -80]);
   const y = useTransform(scrollYProgress, [0, 1], [-80, 100]);//moves element up 80 and down 100
 
   return (
@@ -77,7 +77,6 @@ export default function MissionVisionSlider({ image1, image2 }) {
         <div ref={containerRef} className="relative flex flex-col items-center md:items-end space-y-6 md:space-y-0">
           {/* Image-1 */}
           <div 
-          // style={{ x }}
           className="w-[100%] relative z-0">
             <Image
               src={image1}
@@ -87,7 +86,7 @@ export default function MissionVisionSlider({ image1, image2 }) {
               className="rounded w-full h-auto"
             />
           </div>
-          {/* image-2  */}
+          {/* Image-2  */}
          <div className="hidden md:block relative left-[60%] w-full z-10">
            <motion.div
              style={{ y }}

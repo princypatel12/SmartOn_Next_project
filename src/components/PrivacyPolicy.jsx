@@ -1,5 +1,6 @@
+// footer policy section starts here
 import  Link  from 'next/link';
-import FooterPolicyReuseSection from './FooterPolicyReuseSection';
+import FooterPolicyReuseSection from './FooterPolicyReuseSection';//this is for all the footer privacypolicy section comman component
 
 export default function PrivacyPolicy(){
   return (
@@ -56,7 +57,7 @@ export default function PrivacyPolicy(){
       </FooterPolicyReuseSection>
 
       <FooterPolicyReuseSection title="Contact Us">
-        <p lassName="mb-4">We invite users to contact us with any questions, concerns, or requests regarding their personal information <Link href="mailto:support@sunbots.in" className="text-[#ff5500] font-bold hover:underline">support@sunbots.in</Link>.</p>
+        <p className="mb-4">We invite users to contact us with any questions, concerns, or requests regarding their personal information <Link href="mailto:support@sunbots.in" className="text-[#D63E13] font-bold hover:underline">support@sunbots.in</Link>.</p>
         <p>This updated Privacy Policy is part of our commitment to transparency, compliance with global data protection laws, and dedication to safeguarding the privacy and security of our users' information.</p>
       </FooterPolicyReuseSection>
       <DataDeletionPolicy/>

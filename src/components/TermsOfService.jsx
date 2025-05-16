@@ -1,5 +1,6 @@
+// this is the terms of service page
 import Link from 'next/link';
-import FooterPolicyReuseSection from './FooterPolicyReuseSection';
+import FooterPolicyReuseSection from './FooterPolicyReuseSection';//this is for all the footer privacypolicy section comman component
 export default function TermsOfService(){
     return(
        <section className="max-w-3xl mx-auto px-4 py-10 text-sm sm:text-base text-gray-900">
@@ -64,7 +65,7 @@ export default function TermsOfService(){
       </FooterPolicyReuseSection>
       
       <FooterPolicyReuseSection title="Contact Us">
-        <p lassName="mb-4">For questions about these Terms, please contact us at<Link href="mailto:support@sunbots.in" className="text-[#ff5500] font-bold hover:underline">support@sunbots.in</Link></p>
+        <p className="mb-4">For questions about these Terms, please contact us at<Link href="mailto:support@sunbots.in" className="text-[#D63E13] font-bold hover:underline">support@sunbots.in</Link></p>
       </FooterPolicyReuseSection>
     </section>
     );
